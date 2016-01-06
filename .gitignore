@@ -1,0 +1,37 @@
+#Gitignore for websites. 
+
+#Any swp files from  vim. 
+*.*~
+#Trash dotfiles.
+*.DS_store
+
+#Latex Garbage
+*.swp
+*.bbl
+*.aux
+*.log
+
+#Non-important image files. 
+*.ai
+*.psd
+*.eps
+*.svg
+
+#Ignore movies and audio
+*.mp4 
+*.mov 
+*.avi
+*.wav
+*.mp3
+
+#Ignore Microsoft, Apple, and PDF documents.
+*.ppt*
+*.doc*
+*.xsl*
+*.numbers
+*.pages
+*.key
+*.pdf
+
+#Notebook garbage. 
+*.ipynb_checkpoints
