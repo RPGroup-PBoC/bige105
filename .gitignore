@@ -35,3 +35,4 @@
 
 #Notebook garbage. 
 *.ipynb_checkpoints
+_publications
