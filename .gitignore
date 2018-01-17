@@ -35,4 +35,10 @@
 
 #Notebook garbage. 
 *.ipynb_checkpoints
+
+#Folders and scripts to ignore
 _publications
+_lecture_slides
+*sh
+
+
