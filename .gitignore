@@ -10,6 +10,10 @@
 *.bbl
 *.aux
 *.log
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.out
 
 #Non-important image files. 
 *.ai
