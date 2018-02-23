@@ -1,0 +1,287 @@
+% This is a sample LaTeX input file.  (Version of 9 April 1986)
+%
+% A '%' character causes TeX to ignore all remaining text on the line,
+% and is used for comments like this one.
+
+% Rob Phillips lifted from /usr/local/lib/tex/inputs/sample.tex
+% to use as template.
+
+\documentclass[12pt]{article}    % Specifies the document style.
+
+ \usepackage[pdftex]{graphicx}
+\input{epsf}
+
+\usepackage{fancyhdr}
+\usepackage{extramarks}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{tikz}
+\usepackage{tcolorbox}
+\tcbuselibrary{breakable}
+\usepackage{mathtools}
+\usepackage{color,soul}
+\usepackage{mdframed}
+\usepackage{graphicx}
+\usetikzlibrary{automata,positioning}
+\usepackage{environ}
+\usepackage{hyperref}
+
+                           % The preamble begins here.
+\begin{document}           % End of preamble and beginning of text.
+\relax
+
+
+\begin{center}
+{\bf\Large Bi/Ge105: Evolution}\\
+{\bf\Large Homework 1}\\
+{\bf\Large Due Date: Thursday, January 25, 2018}\\
+\end{center}
+ 
+``The real voyage of discovery consists not in seeking new
+landscapes but in having new eyes.''  - Marcel Proust\\
+
+
+\noindent {\bf 1. A feeling for the numbers in evolution}\\
+
+\noindent The processes of evolution take place at many different scales in
+both space and time.  The goal of this first problem is nothing more than to ``play''
+with some of the characteristic scales associated with a broad range of processes in
+evolution ranging from the very small (e.g. number of mutations per cell in a bacterium
+after one round of replication) to the very large (e.g. how far do the Galapagos islands travel
+in a million years).  These estimates are intended to be done using simple arithmetic of
+the ``one-few-ten'' variety (i.e. few times few is ten) and to give an order-of-magnitude 
+picture of the phenomenon of interest.  Take pride in  your results and state and
+justify (with citations) the assumptions you make carefully and give a simple, intuitive description of how you came
+to your results.   Please don't report
+rough estimates with long lists of ``significant'' figures.  \\
+
+
+
+
+(a) One of the reasons that evolution is hard to think about is because of
+the vast times involved in evolutionary processes.  One of the more interesting
+things we have to remember is the interplay between the dynamics of the
+earth and the dynamics of the living organisms on earth.  For example, we will later
+learn about the consequences of the closing off of the Isthmus of Panama for
+evolution.  Similarly, the collision of India with the Asian continent brought an
+end to the Tethys Sea.  In this part of the problem, we will think about
+such geological processes as they bear on some of our favorite topics from
+the course.\\
+
+\noindent We begin by thinking about how fast the Galapagos Islands are moving.  Note that these islands, like the Hawaiian Islands, are being produced by a ``hotspot'' that is near the current islands of Isabella and Fernandina.  The islands then move in a southeasterly direction towards the coast of South America.  Given that the island of Espanola is roughly 
+$3.5 \times 10^6$ years old, make an estimate for the mean rate at which these islands are moving to the southeast per year.  Give your answer in cm/year.
+Also, notice that as the islands age, their height is reduced with the new islands of 
+Fernandina and Isabella with volcanoes over 1500 m in height while Espanola has a
+height of only roughly 200 m.   Assuming that the speed you found for the Galapagos
+is typical for island chains, make an estimate of the age of the island Kauai using
+the same kind of logic.  What factors might complicate this comparison, and how would they change this estimate (qualitatively)?\\
+
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=5.0in]{TsunamiSurvivor.pdf}
+\caption{Article about tsunami survivor after Boxer Day
+earthquake in Indonesia in 2004.}
+\label{fig:Tsunami}
+\end{center}
+\end{figure}
+
+
+(b) Use Figure~\ref{fig:Tsunami} to estimate the
+speed of the ocean currents experienced by Rizal Shahputra.
+Using your estimate from the first part of the problem,
+give an estimate of the time spent in the ocean by the 
+tortoise shown in Figure~\ref{fig:Tortoise} in its journey
+drifting from Aldabra (see Figure~\ref{fig:Aldabra}) to Tanzania!\\
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=4.0in]{AldabraTortoise.pdf}
+\caption{Tortoise found in Tanzania after traveling across
+the ocean.  Notice the barnacles that have attached to the tortoise.
+}
+\label{fig:Tortoise}
+\end{center}
+\end{figure}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=5.0in]{Aldabra.pdf}
+\caption{Map showing the position of the Aldabra Atoll in
+the Indian Ocean.
+}
+\label{fig:Aldabra}
+\end{center}
+\end{figure}
+
+
+
+%
+%(e) One of the great controversies in the history of the development of our
+%understanding of evolution had to do with the question of whether or not
+%the Earth was old enough to accommodate the ``slowness'' of evolution.
+%However, it is not at all clear how people knew how to assign any numbers to
+%the debate.  Lord Kelvin was able to make an estimate for the age of the earth
+%and found an answer in the millions of years which was claimed to be too short.
+%Let's examine the timing question by making some estimates about one of
+%the key case studies from this course which is the evolution of whales.  For simplicity, assume
+%that at the time of the extinction of the dinosaurs (65 Ma), the mammalian ancestor
+%of whales was $\approx$ 10 cm in length.  Using {\it Rodhocetus} and {\it Basilosaurus} 
+%as examples, figure out how much change in length there was per generation in 
+%the overall body plan in going from the post-dinosaur ancestor to these early whales.
+%The logic of your estimate should involve figuring out when these whale ancestors lived,
+%how big they were and estimating the typical generation time.  It is not entirely clear
+%that this estimate provides any insight into how whales actually evolved, but 
+%the numbers provide an interesting sense of how little it would take on a generation
+%by generation basis to result in enormous structural changes over geological time scales.
+%Also, it raises the question again of how and why scientists felt that the time scale proposed
+%by Kelvin for the age of the earth was ``too short'' for evolution to have produced the world we see.\\
+
+
+%\begin{figure}[h]
+%\begin{center}
+%\includegraphics[width=4.0in]{GroundFinch.pdf}
+%\caption{Ground finch in the Galapagos.}
+%\label{fig:GroundFinch}
+%\end{center}
+%\end{figure}
+%
+%%f) Grand Canyon problem - want to do something about the age of the full height of the
+%%canyon and the mean sedimentation rate.   Grand Canyon layers and timing of sedimentation
+%%
+%
+%In these remaining estimates, the goal is actually to make yourself do quick
+%drills to get into the habit of just making guesses about
+%quantities.  Do not look up any facts - you can look at the included
+%pictures  and
+%just make a quick statement based upon less than 60 seconds of staring.
+%When appropriate, try to use the square root rule that we discussed in class.
+%For each case, give a brief, but thorough description of how you
+%came by your estimates.  Don't just quote a single number. Give us
+%some context about how you got your result.  \\
+%
+%
+%
+%(f) What is the thickness of the beak of a ground finch? (in mm)
+%Make an estimate of the beak-to-beak variation in beak size between
+%adult ground finches.  Use Figure~\ref{fig:GroundFinch} to help in making
+%a rapid estimate.\\
+
+
+
+
+\noindent {\bf 2. Deep time and earth history}\\
+
+
+\noindent One of the most interesting topics in science is how we have learned to probe
+deep time.  In this course, the subject of deep time will appear repeatedly
+and we will spend a lot of time examining how DNA sequence has permitted us
+to explore deep time in the biological setting.  Of course, biology and the
+dynamics of the Earth are not independent phenomena and the point of
+this problem is to better understand the details of how scientists figure out how old the Earth is as well as how old
+various fossil-bearing strata are.  To that end, we will first consider a simple model
+of the radioactive decay process for potassium-argon dating methods, recognizing
+that there are many other dating methods that complement the one
+considered here.\\
+
+
+\noindent{\it Potassium-Argon dating}\\
+
+Potassium-argon dating is based upon the decay of $^{40}$K into
+$^{40}$Ar.  To a first approximation, this method can be thought of as a
+simple stopwatch in which at t = 0 (i.e. when the rocks crystallize), the amount of $^{40}$Ar is zero, since it is presumed that  all of the inert argon has
+escaped. We can write an equation for the number of potassium nuclei at time $t+\Delta t$ as
+\begin{equation}
+N_\mathrm{K}(t+\Delta t)=N_\mathrm{K}(t)-(\lambda \Delta t) N_\mathrm{K}(t).
+\label{eq:decay}
+\end{equation}
+Stated simply, this means that in every small time increment $\Delta t$, every nucleus
+has a probability $\lambda \Delta t$ of decaying, where $\lambda$ is the decay rate of $^{40}\mathrm{K}$ into $^{40}\mathrm{Ar}$. We also employ the important constraint that the number of total nuclei in the system must remain constant, so that
+
+\begin{equation}
+    N_\mathrm{K}(0)=N_\mathrm{K}(t)+N_\mathrm{Ar}(t),
+\label{eq:constraint}
+\end{equation}
+
+\noindent where $N_\mathrm{K}(0)$ is the number of $\mathrm{^{40}K}$ nuclei present when the rock is formed, $N_\mathrm{K}(t)$ is the number of $\mathrm{^{40}K}$ nuclei present in the rock at time $t$, and $N_\mathrm{Ar}(t)$ is likewise the number of $\mathrm{^{40}Ar}$ nuclei present in the rock at time $t$. In this part of the problem you will use equations \ref{eq:decay} and \ref{eq:constraint} to construct differential equations to find the relationship between $N_\mathrm{K}(t)$, $N_\mathrm{Ar}(t)$, and $t$. \\
+
+
+(a) Using equations \ref{eq:decay} and \ref{eq:constraint} as a guide, write differential equations for $N_\mathrm{K}(t)$ and $N_\mathrm{Ar}(t)$. How do these two expressions relate to one another?\\
+
+
+(b)  Next, we note that the solution for a linear differential equation of the form $\frac{dx}{dt} = kx$ is given by $x(t) = x(0) e^{kt}$. Use this result to solve for $N_\mathrm{K}(t)$.\\
+
+
+(c) Use the constraint encapsulated by equation \ref{eq:constraint} to write an equation for the lifetime of the rock, $t$, in terms of the ratio $\frac{N_\mathrm{Ar}}{N_\mathrm{K}}$.\\
+
+
+
+\noindent{\it Age of the Galapagos Islands}\\
+
+The potassium-argon dating method described above has been used in
+several contexts central to the themes of this course.  When we are in
+the Galapagos, our guides will tell us about the ages of islands such
+as Santa Cruz and Isabella.  But how are these numbers known
+and what evidence substantiates these claims when naturalist guides make
+them?  In a beautiful article from Science Magazine in 1976 (Science, New Series, Vol. 192, No. 4238 (Apr. 30, 1976), pp. 465-467), Kimberly Bailey tells us of her efforts to determine the ages of the islands of
+Santa Cruz, San Cristobal and Espanola.  We will now
+use her data to find out the K-Ar ages of several of these islands ourselves. \\
+
+(d) Read Bailey's paper and give a brief synopsis (1 paragraph) of her approach
+and findings.\\
+
+(e)  Use
+the results from Sample H70-130 and JD1088 of Table 1 to determine ages for Santa Cruz Island and
+Santa Fe Island.   To
+do this, you will need to navigate a few subtleties.  First, note that the amount of Argon is
+presented in moles, and so you can use those numbers directly.   To determine
+the number of moles of $^{40}\mathrm{K}$, you will need to use the weight percentage that is $K_2O$ and use that in combination with the mass of the sample to figure out how much $K$ is present.   Note that not all of the potassium in the sample will be the isotope $^{40}\mathrm{K}$, so you will need to use the ratio of $^{40}\mathrm{K}$ to total potassium, $\mathrm{\frac{^{40}K}{K_{total}}} \approx 1.2 \times 10^{-4}$. Additionally, use the decay constant $\lambda \approx 5.8 \times 10^{-11}\ \mathrm{yr}^{-1}$.\\
+
+
+
+
+
+\noindent{\it Determining Lucy's age}\\
+
+
+In 1974, a fossil of \textit{Australopithecus afarensis} (shown in Figure \ref{fig:lucy}) was discovered in Ethiopia. This specimen, which was dubbed ``Lucy," marks an important step in understanding human evolution because at the time of
+its discovery,  it was the earliest known species to show evidence of bipedal locomotion. Because Lucy was found in an area that was rich in volcanic rock, potassium-argon dating was an ideal method for determining Lucy's age (Aronsen 1977). \\
+
+Unfortunately for us, real-world K-Ar dating data are generally not neatly presented in the form of $N_\mathrm{Ar}$ and $N_\mathrm{K}$. Instead, geologists will measure a concentration of $\mathrm{^{40}Ar}$ in mol/g and a weight percent of $\mathrm{K_2O}$. These data must be used to identify the number of $\mathrm{^{40}Ar}$ and $\mathrm{^{40}K}$ nuclei in the sample. In this part of the problem, we will look at such measurements from an actual paleontological specimen as reported in Aronsen (1977) in order to determine its age.\\
+
+
+\begin{figure}[h!]
+\begin{center}
+	\scalebox{0.2}{\includegraphics{lucy_fossil}}
+	\caption{The remains of Lucy, a specimen of \textit{Australopithecus afarensis}.}
+	\label{fig:lucy}
+\end{center}
+\end{figure}
+
+
+(f) Using the table of $\mathrm{^{40}Ar}$ and $\mathrm{K_2O}$ measurements below (Aronsen 1977), obtain an estimate for Lucy's age. Be sure to explain the steps you take to obtain your answer. Since each sample is taken from the area in which Lucy was found, we expect each sample to give you roughly the same answer; you will need to take the mean of the ages of each sample to obtain an estimate for Lucy's age.\\
+
+\noindent Assume that each sample has a total mass of 1 g. Also, note that not all of the potassium in the sample will be the isotope $^{40}\mathrm{K}$, so you will need to use the ratio of $^{40}\mathrm{K}$ to total potassium, $\mathrm{\frac{^{40}K}{K_{total}}} \approx 1.2 \times 10^{-4}$. Additionally, use the decay constant $\lambda \approx 5.8 \times 10^{-11}\ \mathrm{yr}^{-1}$. \\
+
+\begin{center}
+\begin{tabular}{c|c|c}
+  \textbf{Sample Number} & $\boldsymbol{\mathrm{^{40}Ar \times 10^{-12}\ mol/g}}$ & $\boldsymbol{\mathrm{wt.\ \%\ K_2O}}$ \\
+  1 & 2.91 & 0.657 \\
+  2 & 3.18 & 0.755 \\
+  3 & 3.08 & 0.680 \\
+\end{tabular}
+\end{center}
+
+
+
+
+
+%\noindent {\bf 3. The place of evolution in biology}\\
+%
+%In the title to a famous article, Theodosius Dobzhansky noted that ``Nothing in Biology Makes Sense Except in the Light of Evolution''.  In class we discussed a variety of examples of how Darwinian thinking and evolutionary principles influence other areas of the life sciences (e.g. agriculture, medicine, biotechnology).  Research and describe a modern day example of how evolutionary theory has been incorporated into other biological disciplines.  Explain the topic/problem and your thoughts on how evolutionary principles/thinking were applied.  Your brief essay should be 1-2 paragraphs.  Please submit by email in pdf
+%form to Profs. Orphan, Phillips and the TAs.\\
+
+
+
+    \end{document}             % End of document.
