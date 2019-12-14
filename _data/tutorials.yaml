@@ -1,0 +1,18 @@
+- tut:
+  title: "Tutorial 0a: Setting up your computer"
+  link: t0a_setting_up
+  desc:  This tutorial will walk you thorugh setting Python 3.8 on your computer
+  pic: tut0a.png
+
+- tut:
+  title: "Tutorial 1: Consider the leviathan's teeth"
+  filename: t1_enamelin
+  desc: 
+     In this tutorial we will explore the sequencing data for the ENAM gene in
+      placental mammals.
+  pic: tut1.png
+  req:
+    - ds:
+      title: Aligned ENAM sequences
+      storage: local 
+      link: enam.nxs

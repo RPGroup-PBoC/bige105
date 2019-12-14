@@ -1,0 +1,53 @@
+# ##############################################################################
+# Authors List
+# ------------------------------------------------------------------------------
+# This YAML data file contains entry for each author involved in the work
+# This YAML data file contains information for each author of the work. The 
+# author list will be generated in the order in which they are listed below. 
+# You can  add additional fields to each person, but these will not show up
+# automatically and must then be included manually in the Liquid template code 
+# of the `page01_people.md` file.
+# ##############################################################################
+- author:
+  name: Rob Phillips
+  link: "https://rpgroup.caltech.edu"
+  title: Instructor
+  img: rob.jpg
+  institute: Division of Biology and Biological Engineering and Department of Physics
+  other_info:
+     Email Address: "phillips [at] pboc [dot] caltech [dot] edu"
+
+- author:
+  name: Victoria Orphan
+  link: "http://orphanlab.caltech.edu/"
+  title: Instructor
+  img: vic.jpg
+  institute: Division of Geological and Planetary Sciences
+  other_info:
+    Email Address: vorphan [at] gps [dot] caltech [dot] edu
+
+- author:
+  name: Suzy Beeler
+  title: Graduate TA
+  img: suzy.jpg
+  link: "https://sbeeler.github.io"
+  institute: Division of Biology and Biological Engineering
+  other_info: 
+      Email Address: beeler [at] caltech [dot] edu
+
+- author:
+  name: Griffin Chure
+  title: Graduate TA
+  img: griffin.jpg
+  link: "https://gchure.github.io"
+  institute: Division of Biology and Biological Engineering
+  other_info: 
+      Email Address: gchure [at] caltech [dot] edu
+
+- author:
+  name: Manuel Razo-Mejia
+  title: Graduate TA
+  img: manuel.jpg
+  institute: Division of Biology and Biological Engineering
+  other_info: 
+      Email Address: mrazomej [at] caltech [dot] edu
