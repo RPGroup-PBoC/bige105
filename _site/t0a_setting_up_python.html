@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109526846-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', );
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [['$','$'], ['\\(','\\)']],
+      processEscapes: true
+    }
+  });
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+	<meta charset="utf-8">
+	<title>BiGe105</title>
+
+  <!-- Edit site and author settings in `_config.yml` to make the social details your own -->
+
+    <meta content="BiGe105" property="og:site_name">
+  
+    <meta content="BiGe105" property="og:title">
+  
+  
+    <meta content="website" property="og:type">
+  
+  
+    <meta content="Evolution" property="og:description">
+  
+  
+    <meta content="http://localhost:4000/t0a_setting_up_python" property="og:url">
+  
+  
+  
+    <meta content="http://localhost:4000/assets/img/logo.png" property="og:image">
+  
+  
+  
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@">
+    <meta name="twitter:creator" content="@">
+  
+    <meta name="twitter:title" content="BiGe105">
+  
+  
+    <meta name="twitter:url" content="http://localhost:4000/t0a_setting_up_python">
+  
+  
+    <meta name="twitter:description" content="Evolution">
+  
+  
+    <meta name="twitter:image:src" content="http://localhost:4000/assets/img/logo.png">
+  
+
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta property="og:image" content="">
+	<link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="/assets/img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicon/apple-touch-icon-144x144.png">
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#263959">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#263959">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#263959">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="/assets/fonts/font-awesome/css/font-awesome.min.css">
+	<!-- Styles -->
+	<link rel="stylesheet" href="/assets/css/main.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <aside class="sidebar">
+  <header>
+    <div class="about">
+      <div class="cover-author-image">
+        <a href="/"><img style="max-width:60%; height:auto;" src="/assets/img/logo.png" alt=""></a>
+      </div>
+      <div class="author-name"></div>
+      <div class="sidebar-links">
+      <hr>
+      
+       <p><a href="http://localhost:4000/index.html">About</a></p>
+      <hr>
+      
+      
+       <p><a href="http://localhost:4000/people">People</a></p>
+      <hr>
+      
+      
+       <p><a href="http://localhost:4000/code">Computational Explorations</a></p>
+      <hr>
+      
+      
+       <p><a href="http://localhost:4000/homework">Homework</a></p>
+      <hr>
+      
+      
+       <p><a href="http://localhost:4000/readings">Readings</a></p>
+      <hr>
+      
+      
+       <p><a href="http://localhost:4000/lab">Laboratory Experiments</a></p>
+      <hr>
+      
+      
+      
+      
+      
+      
+      </div>
+    </div>
+  </header> <!-- End Header -->
+
+  <footer>
+    <section class="contact">
+      <h3 class="contact-title">Contact</h3>
+      <ul>
+        
+        
+          <li class="github"><a href="http://github.com/RPGroup-PBoC" target="_blank"><i class="fa fa-github"></i></a></li>
+        
+        
+      </ul> 
+    </section> 
+    <div class="copyright">
+      <p>2019 &copy; 
+    </div>
+    <center>
+    </center>
+  </footer> 
+</aside> 
+<div class="content-box clearfix">
+  <article class="article-page">
+  <div class="page-content">
+    
+    
+    <div class="wrap-content">
+      <header class="header-page">
+        <h1 class="page-title"></h1>
+      </header>
+      <h1 id="tutorial-0a-setting-up-python-for-scientific-computing">Tutorial 0a: Setting Up Python For Scientific Computing</h1>
+
+<p>© 2019 Griffin Chure. This work is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution License CC-BY 4.0</a>. All code contained herein is licensed under an <a href="https://opensource.org/licenses/MIT">MIT license</a></p>
+
+<hr />
+
+<p>In this tutorial, we will set up a scientific Python computing environment using the <a href="https://www.continuum.io/downloads">Anaconda python distribution by Continuum Analytics</a>.</p>
+
+<h2 id="why-python">Why Python?</h2>
+
+<p>As is true in human language, there are <a href="https://en.wikipedia.org/wiki/List_of_programming_languages">hundreds of computer programming languages</a>. While each has its own merit, the major languages for scientific computing are C, C++, R, MATLAB, Python, Java, and Fortran. <a href="https://www.mathworks.com">MATLAB</a> and <a href="https://www.python.org">Python</a> are similar in syntax and typically read as if they were written in plain english. This makes both languages a useful tool for teaching but they are also very powerful languages and are <strong>very</strong> actively used in real-life research. MATLAB is proprietary while Python is open source. A benefit of being open source is that anyone can write and release Python packages. For science, there are many wonderful community-driven packages such as <a href="http://www.numpy.org">NumPy</a>, <a href="http://www.scipy.org">SciPy</a>, <a href="http://scikit-image.org">scikit-image</a>, and <a href="http://pandas.pydata.org">Pandas</a> just to name a few.</p>
+
+<h2 id="installing-python-36-with-anaconda">Installing Python 3.6 with Anaconda</h2>
+
+<h3 id="python-36-vs-python-27">Python 3.6 vs Python 2.7</h3>
+
+<p>There are two dominant versions of Python used for scientific computing, Python 2.7.x and Python 3.5.6. We are at an interesting crossroads between these two versions. The most recent release (Python 3.6.0 as of December 2016) is not backwards compatible with previous versions of Python. While there are still some packages written for Python 2.7 that have not been modified for compatibility with Python 3.6, a large number have transitioned. As this will be the future for scientific computing with Python, we will use Python 3.6.0 for these tutorials.</p>
+
+<h3 id="anaconda">Anaconda</h3>
+
+<p>There are several scientific Python distributions available for MacOS, Windows, and Linux. The two most popular, <a href="https://www.enthought.com/products/canopy/">Enthought Canopy</a> and <a href="https://www.continuum.io/why-anaconda">Anaconda</a> are specifically designed for scientific computing and data science work. For this course, we will use the Anaconda Python 3.6 distribution. To install the correct version, follow the instructions below.</p>
+
+<ol>
+  <li>
+    <p>Navigate to <a href="https://www.continuum.io/downloads">the Anaconda download page</a> and download the Python 3.6 graphical installer.</p>
+  </li>
+  <li>
+    <p>Launch the installer and follow the onscreen instructions.</p>
+  </li>
+</ol>
+
+<p>Congratulations! You now have the beginnings of a scientific Python distribution.</p>
+
+<h3 id="installing-gitbash-for-windows-users">Installing GitBash for Windows Users</h3>
+
+<p>It will be useful to have access to a UNIX command line to launch Jupyter notebooks, make and move directories, as well as to install extra packages for Python through the conda package manager. For those on OSX, we will use the built-in Terminal.app program. For those using Linux, we will assume you know what we are talking about and have some familiarity with the command line.</p>
+
+<p>Windows does not come with a UNIX command line interface. To install such an interface, we recommend using GitBash. To install, please navigate to their <a href="https://git-for-windows.github.io">download page</a> and follow the download instructions. Please set the following setttings upon installation.</p>
+
+<ul>
+  <li><code class="highlighter-rouge">Adjusting your PATH environment -&gt; Use Git from Windows Command Prompt.</code></li>
+  <li><code class="highlighter-rouge">Configuring the line ending conversions -&gt; Checkout Windows-style, commit unix style line endings.</code></li>
+</ul>
+
+<p>We will not be using the git version control system, so these preferences are less important.</p>
+
+<p>Once installed, <strong>you will be able to launch a UNIX compatible terminal interface wherever you are in your operating system by right clicking on the desktop or windows explorer window and selecting “Run GitBash here”.</strong></p>
+
+<p>Please see the <a href="t0c_python_syntax_and_plotting.html">python syntax tutorial</a> for a primer on using the UNIX command line.</p>
+
+<h3 id="installing-extra-packages-using-conda">Installing extra packages using Conda</h3>
+
+<p>With the Anaconda Python distribution, you can install verified packages (scientific and non-scientific) through the <a href="http://conda.pydata.org/docs/">Conda</a> package manager. <strong>Note that you do not have to download Conda separately. This comes packaged with Anaconda</strong>. To install packages through Conda, we must manually enter their names on the command line. For the purposes of these tutorials, we will only need to install/upgrade two packages – <a href="http://seaborn.pydata.org">Seaborn for plotting styling</a> and an update IPython to <a href="http://blog.jupyter.org/2016/07/08/ipython-5-0-released/">IPython 5.0</a>. To open a terminal on OSX, click on the search icon in the upper right-hand corner of your menu bar and type “Terminal”. This application is installed by default on your computer. For Windows users, you can simply right on your desktop and select “Run GitBash here”. Once you have a terminal window open, type the following commands:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda update ipython 
+</code></pre></div></div>
+<p>and</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda install seaborn
+</code></pre></div></div>
+
+<p>Note that you will have to type <code class="highlighter-rouge">y</code> in your terminal when prompted. This is to ensure that you are aware of what is being installed and what dependencies it requires.</p>
+
+<p>It will be useful for us if you can pre-install the <a href="http://biopython.org">BioPython</a> package that we will use to manipulate DNA sequences. For this again just run in the terminal</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda install biopython
+</code></pre></div></div>
+
+<h2 id="installing-atom-text-editor">Installing Atom text editor</h2>
+
+<p>In this course, all tutorials and homeworks will be performed using the browser-based <a href="">Jupyter notebook</a>. However, we may need to write a few Python scripts. For these applications, a text editor is more useful. If you have familiarity with a specific text editor (vim, emacs, sublime, VisualCodeStudio, etc), you may use that. For this course, we recommend downloading and configuring the <a href="https://atom.io">Atom</a> text editor. To install, navigate to their page and follow the instructions below.</p>
+
+<ol>
+  <li>
+    <p><a href="https://atom.io">Navigate to the Atom</a> homepage and follow the instructions for installation.</p>
+  </li>
+  <li>
+    <p>Once installed, launch Atom and navigate to <code class="highlighter-rouge">Packages -&gt; Settings View -&gt; Open</code> and scroll to the bottom of the page. Select <code class="highlighter-rouge">Editor</code> and make sure the setting <code class="highlighter-rouge">Tab Length</code> is set to 4. Below that, make sure <code class="highlighter-rouge">Tab Type</code> is set to <code class="highlighter-rouge">soft</code>. This is important as indentation and white space is interpreted in Python.</p>
+  </li>
+</ol>
+
+<h3 id="setting-up-the-directory-structure">Setting up the directory structure</h3>
+
+<p>For this course (and your coding in ‘real life’), it will help if you follow a specific directory structure for your code and data. During this course, you will  write a lot of Jupyter Notebooks and Python scripts that will load in data. <strong>For us to run your code, all data must be accessed through a <code class="highlighter-rouge">data</code> folder in the same directory as the notebook.</strong> To make this structure, open Atom and follow the instructions below.</p>
+
+<ol>
+  <li>
+    <p>Navigate to <code class="highlighter-rouge">File -&gt; Add Project Folder</code> and make a new folder in your home directory. On MacOS and Linux, this will be in <code class="highlighter-rouge">/Users/YOUR_USERNAME/</code>. On Windows, this will be <code class="highlighter-rouge">C::/Users/YOUR_USERNAME/</code>.</p>
+  </li>
+  <li>
+    <p>Name this project <code class="highlighter-rouge">bige105</code>.</p>
+  </li>
+  <li>
+    <p>Now <code class="highlighter-rouge">bige105</code> should appear on the left-hand side of your editor. Right-click on <code class="highlighter-rouge">bige105</code> and make a new folder called <code class="highlighter-rouge">data</code>. This is where all of our data from the class will live.</p>
+  </li>
+</ol>
+
+<p>You could also make this folder structure in your standard operating system manner. Now, if everything went well, your Atom editor window should look like this on the left-hand side (with <code class="highlighter-rouge">bige105</code> instead of <code class="highlighter-rouge">bi1</code>).</p>
+
+<p><img src="./images/setup.png" alt="" /></p>
+
+<p>If you have followed all of these steps successfully, you should have a complete setup for scientific computing in Python!</p>
+
+<h2 id="your-first-script-and-reading-these-tutorials">Your first script and reading these tutorials</h2>
+
+<p>This tutorial (as all others in this course) are written as <a href="">Jupyter notebooks</a> which are documents which contain cells for writing text and math as well as cells that contain and excute block of Python code. These tutorials will serve as a useful reference that not only shows the code and output, but an explaination of the biological and physical principles behind it. For these tutorials, code and its output are rendered in two boxes as is shown below.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># This is a comment and is not read by Python
+</span><span class="k">print</span><span class="p">(</span><span class="s">'Hello! This is the print function. Python will print this line below'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Hello! This is the print function. Python will print this line below
+</code></pre></div></div>
+
+<p>The box with the gray background contains the Python code while the output is in the box with the white background. When reading these tutorials, you will retype  the code lines into Atom or in the IPython interpreter directly.</p>
+
+<p>If you have followed the steps above, we are finally ready to write our first Python script. In your Atom window, create a new file named <code class="highlighter-rouge">my_first_script.py</code> and save it within your <code class="highlighter-rouge">bige105</code> root directory (not in <code class="highlighter-rouge">data</code>). You can do this by going to <code class="highlighter-rouge">File -&gt; New File</code>  then <code class="highlighter-rouge">File -&gt; Save</code> and navigate to your <code class="highlighter-rouge">bige105</code> folder. Now, in the <code class="highlighter-rouge">my_first_script.py</code> file, we’ll generate a plot of one of my favorite functions. Type (or copy and paste) the following lines into your script file and save it.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Import Python packages necessary for this script
+</span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="n">sns</span>
+
+<span class="c1"># Generate a beautiful sinusoidal curve
+</span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mi">500</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">x</span><span class="p">)))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s">'$x$'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s">'$y$'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p>Once you have this file saved, open a new IPython interpreter by opening a terminal (Terminal.app on OSX or Gitbash on Windows) and typing <code class="highlighter-rouge">ipython</code>. You will now be greeted with an IPython prompt in your terminal (<code class="highlighter-rouge">In[1]</code>) along with some information about your Python version. To run the script you just saved, type the following commands:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>In [1]: cd ~/bige105
+In [2]: %matplotlib
+In [3]: %run my_first_script.py
+</code></pre></div></div>
+
+<p>The first command navigates to the correct directory, assuming you make your structure as described above. The second command allows for us to keep typing while plots are being shown. The third command runs the script we just wrote through the IPython interpreter. The percentage signs (<code class="highlighter-rouge">%</code>) for <code class="highlighter-rouge">In [2]:</code> and <code class="highlighter-rouge">In [3]:</code> are called Python magic fuctions and protect you from overwriting important variables in the default Python name space. While just typing <code class="highlighter-rouge">matplotlib</code> and <code class="highlighter-rouge">run my_first_script.py</code> will work, it is better style to use these magic functions.</p>
+
+<p>If everything works as expected, you should see the plot below.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># These commands are for showing the plot in this notebook only. These should
+# NOT be in your python script.
+</span><span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s">'$x$'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s">'$y$'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;matplotlib.text.Text at 0x11a09bb00&gt;
+</code></pre></div></div>
+
+<p><img src="output_27_1.png" alt="png" /></p>
+
+<p>Once you generate this plot, you can close out of it by clicking the <code class="highlighter-rouge">x</code> in the upper left hand corner of the window. To exit out of the IPython interpreter, you can type the following command.</p>
+
+<p><code class="highlighter-rouge">In [4]: exit()</code></p>
+
+<p>Note that directly above the plot, there is some text that looks like <code class="highlighter-rouge">&lt;matplotlib.text.Text at 0x1109bb00&gt;</code>. This is an output from the Matplotlib plotting library and can be ignored in its entirety.</p>
+
+<h2 id="what-is-jupyter">What is Jupyter?</h2>
+
+<p><a href="http://jupyter.org">Jupyter Notebooks</a> are very useful tools for writing code, text, and math into a single document. In fact, this (and all other tutorials) were written in Jupyter noteooks. For this course, your homeworks will be written in Jupyter notebooks. A tutorial on their use can be found <a href="./t0b_jupyter_notebooks.html">here</a>.</p>
+
+      <div class="page-footer">
+      </div>
+    </div> <!-- End Wrap Content -->
+  </div> <!-- End Page Content -->
+</article> <!-- End Article Page -->
+
+</div>
+
+  </div>
+  
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+</script> <!-- End Analytics -->
+
+</body>
+</html>
