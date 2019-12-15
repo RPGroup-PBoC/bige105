@@ -85,8 +85,8 @@ hr {
   /* 1 */
   overflow: visible;
   /* 2 */
-  color: var(--tertiary-color, orange);
-  size: 0.5px;
+  color: var(--tertiary-color);
+  size: 0.25px;
   width: 70%;
 } 
 
@@ -955,14 +955,14 @@ table tfoot td {
   top: 0;
   left: 0;
   bottom: 0;
-  width: 240px;
-  height: 100%;
-  padding: 20px 10px;
+  width: 200px;
+  height:  100%; 
+  padding: 20px 8px;
   background-color: #ffffff;
 }
 .sidebar a {
   color: var(--primary-color);
-  font-weight: bold;
+  /* font-weight: bold; */
   text-decoration: none;
 }
 
