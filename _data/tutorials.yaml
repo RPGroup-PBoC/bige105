@@ -11,7 +11,7 @@
   pic: tut0b.png
 
 - tut:
-  title: "Tutorial 0b: A Primer On Python Syntax And Plotting"
+  title: "Tutorial 0c: A Primer On Python Syntax And Plotting"
   link: t0c/t0c_python_syntax_and_plotting
   desc:  This tutorial will walk you thorugh how to use the Jupyter Notebook
   pic: tut0c.png
