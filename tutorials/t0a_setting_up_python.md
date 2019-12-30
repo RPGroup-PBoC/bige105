@@ -1,9 +1,7 @@
 ---
 layout: page
-# title: Tutorial 0a
-
-permalink: t0a_setting_up_python
+permalink: tutorials/t0a/t0a_setting_up_python
 sidebar: false
 ---
 
-{% include t0a.md %}
+{% include_relative t0a/t0a_setting_up_python.md %}

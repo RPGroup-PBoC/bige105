@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109526846-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', );
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [['$','$'], ['\\(','\\)']],
+      processEscapes: true
+    }
+  });
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+	<meta charset="utf-8">
+	<title>BiGe105</title>
+
+  <!-- Edit site and author settings in `_config.yml` to make the social details your own -->
+
+    <meta content="BiGe105" property="og:site_name">
+  
+    <meta content="BiGe105" property="og:title">
+  
+  
+    <meta content="website" property="og:type">
+  
+  
+    <meta content="Evolution" property="og:description">
+  
+  
+    <meta content="http://localhost:4000/tutorials/t0a/t0a_setting_up_python" property="og:url">
+  
+  
+  
+    <meta content="http://localhost:4000/assets/img/logo.png" property="og:image">
+  
+  
+  
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@">
+    <meta name="twitter:creator" content="@">
+  
+    <meta name="twitter:title" content="BiGe105">
+  
+  
+    <meta name="twitter:url" content="http://localhost:4000/tutorials/t0a/t0a_setting_up_python">
+  
+  
+    <meta name="twitter:description" content="Evolution">
+  
+  
+    <meta name="twitter:image:src" content="http://localhost:4000/assets/img/logo.png">
+  
+
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta property="og:image" content="">
+	<link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="/assets/img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicon/apple-touch-icon-144x144.png">
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#263959">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#263959">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#263959">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="/assets/fonts/font-awesome/css/font-awesome.min.css">
+	<!-- Styles -->
+	<link rel="stylesheet" href="/assets/css/main.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <aside class="sidebar">
+  <header>
+    <div class="about">
+      <div class="cover-author-image">
+        <a href="/"><img style="max-width:60%; height:auto;" src="/assets/img/logo.png" alt=""></a>
+      </div>
+      <div class="author-name"></div>
+      <div class="sidebar-links">
+      <hr>
+      
+       <p><a href="http://localhost:4000/index.html">About</a></p>
+      <hr>
+      
+      
+       <p><a href="http://localhost:4000/people">People</a></p>
+      <hr>
+      
+      
+       <p><a href="http://localhost:4000/code">Computational Explorations</a></p>
+      <hr>
+      
+      
+       <p><a href="http://localhost:4000/homework">Homework</a></p>
+      <hr>
+      
+      
+       <p><a href="http://localhost:4000/readings">Readings</a></p>
+      <hr>
+      
+      
+       <p><a href="http://localhost:4000/lab">Laboratory Experiments</a></p>
+      <hr>
+      
+      
+       <p><a href="http://localhost:4000/syllabus">Syllabus</a></p>
+      <hr>
+      
+      
+      
+      
+      
+      
+      </div>
+    </div>
+  </header> <!-- End Header -->
+
+  <footer>
+    <section class="contact">
+      <h3 class="contact-title">Contact</h3>
+      <ul>
+        
+        
+          <li class="github"><a href="http://github.com/RPGroup-PBoC" target="_blank"><i class="fa fa-github"></i></a></li>
+        
+        
+      </ul> 
+    </section> 
+    <div class="copyright">
+      <p>2019 &copy; 
+    </div>
+    <center>
+    </center>
+  </footer> 
+</aside> 
+<div class="content-box clearfix">
+  <article class="article-page">
+  <div class="page-content">
+    
+    
+    <div class="wrap-content">
+      <header class="header-page">
+        <h1 class="page-title"></h1>
+      </header>
+      <h1 id="tutorial-0a-setting-up-python-for-scientific-computing">Tutorial 0a: Setting Up Python For Scientific Computing</h1>
+
+<p>© 2020 Griffin Chure. This work is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution License CC-BY 4.0</a>. All code contained herein is licensed under an <a href="https://opensource.org/licenses/MIT">MIT license</a></p>
+
+<hr />
+
+<p>In this tutorial, we will set up a scientific Python computing environment using the <a href="https://www.continuum.io/downloads">Anaconda python distribution by Continuum Analytics</a>.</p>
+
+<h2 id="why-python">Why Python?</h2>
+
+<p>As is true in human language, there are <a href="https://en.wikipedia.org/wiki/List_of_programming_languages">hundreds of computer programming languages</a>. While each has its own merit, the major languages for scientific computing are C, C++, R, MATLAB, Python, Java, Julia, and Fortran. <a href="https://www.mathworks.com">MATLAB</a>, <a href="https://julialang.org/">Julia</a>, and <a href="https://www.python.org">Python</a> are similar in syntax and typically read as if they were written in plain english. This makes both languages a useful tool for teaching but they are also very powerful languages and are <strong>very</strong> actively used in real-life research. MATLAB is proprietary while Python is open source. A benefit of being open source is that anyone can write and release Python packages. For science, there are many wonderful community-driven packages such as <a href="http://www.numpy.org">NumPy</a>, <a href="http://www.scipy.org">SciPy</a>, <a href="http://scikit-image.org">scikit-image</a>, and <a href="http://pandas.pydata.org">Pandas</a> just to name a few.</p>
+
+<h2 id="installing-python-37-with-anaconda">Installing Python 3.7 with Anaconda</h2>
+
+<h3 id="python-37-vs-python-27">Python 3.7 vs Python 2.7</h3>
+
+<p>There are two dominant versions of Python (available through the Anaconda distribution) used for scientific computing, Python 2.7 and Python 3.7. We are at an interesting crossroads between these two versions. The most recent release (Python 3.7 as of December ) is not backwards compatible with previous versions of Python. While there are still some packages written for Python 2.7 that have not been modified for compatibility with Python 3.7, a large number have transitioned and Python 2.7 will no longer be supported as of January 1, 2020. As this will be the future for scientific computing with Python, we will use Python 3.7 for these tutorials.</p>
+
+<div class="alert alert-warning"> Note that Python 3.8 was officially released on October 14, 2019 but is not yet released via Anaconda. For the purposes of this course, we will use Python 3.7, which is the latest stable build available through Anaconda.  </div>
+
+<h3 id="anaconda">Anaconda</h3>
+
+<p>There are several scientific Python distributions available for MacOS, Windows, and Linux. The two most popular, <a href="https://www.enthought.com/products/canopy/">Enthought Canopy</a> and <a href="https://www.continuum.io/why-anaconda">Anaconda</a> are specifically designed for scientific computing and data science work. For this course, we will use the Anaconda Python 3.7 distribution. To install the correct version, follow the instructions below.</p>
+
+<ol>
+  <li>
+    <p>Navigate to <a href="https://www.continuum.io/downloads">the Anaconda download page</a> and download the Python 3.7 graphical installer.</p>
+  </li>
+  <li>
+    <p>Launch the installer and follow the onscreen instructions.</p>
+  </li>
+</ol>
+
+<p>Congratulations! You now have the beginnings of a scientific Python distribution.</p>
+
+<h3 id="using-jupyterlab-as-a-scientific-development-environment">Using JupyterLab as a Scientific Development Environment</h3>
+
+<p>Packaged with the Anaconda Python distribution is the <a href="https://jupyter.org/">Jupyter project</a>. This environment is incredibly useful for interactive programming and development and is widely used across scientific computing. Jupyter allows for interactive programming in a large array of programming languages including Julia, R, and MATLAB. As you’ve guessed by this point, we will be focusing on using Python through the Jupyter Environment.</p>
+
+<p>The key component of the Jupyter interactive programming environment is the <a href="https://jupyter.org/">Jupyter Notebook</a>. This acts lkike an interactive script which allows one to interweave code, mathematics, and text to create a complete narrative around your computational project. In fact, you are reading a Jupyter Notebook right now!</p>
+
+<p>While Jupyter Notebooks are fantastic alone, we will be using them throughout the course via the <a href="https://jupyter.org/">JupyterLab Integrated Development Environment (IDE)</a>. JupyterLab allows omne to write code in notebooks, navigate around your file system, write isolated python scripts, and even access a UNIX terminal, all of which we  will do throughout this class. Even better, JupyterLab comes prepackaged with your Anaconda Python distribution.</p>
+
+<h3 id="launching-jupyterlab">Launching JupyterLab</h3>
+
+<p>When you installed Anaconda, you also installed the Anaconda Navigator, an app that allows you to easily launch a JupyterLab instance. When you open up Anaconda Navigator, you should see a screen that looks like this,</p>
+
+<p><img src="navigator.png" alt="" /></p>
+
+<p>where I have boxed in the JupyterLab prompt with a red box. Launch the JupyterLab IDE by clicking the ‘launch’ button. This should automatically open a browser window with the JupyterLab interface,</p>
+
+<p><img src="jupyterlab.png" alt="" /></p>
+
+<h3 id="creating-your-course-directory">Creating your course directory</h3>
+
+<p>During the course, you will be handing in the computational portions of your homeworks as Jupyter Notebooks and, as such, it will be important for the TA’s to be able to run your code to grade it. We will often be reading in data from a file on your computer, manipulating it, and then plotting the outcome. <strong>To ensure the TA’s can run your code without manipulating it, you MUST use a specific file structure.</strong> We can set up the file structure pretty easily directly through JupyterLab.</p>
+
+<p>Open the side bar of the JupyterLab interface by clicking the folder icon on the left hand side of the screen. This will slide open a file browser like so:</p>
+<center>
+<img src="filebrowser.png" width="50%" />
+</center>
+
+<p>Your files will look different than mine (unless you’re using my computer!), but it will show the contents of your computer’s <code class="highlighter-rouge">home</code> directory.</p>
+
+<p>Using the sidebar, navigate to wherever you will want to make a new folder called <code class="highlighter-rouge">BiGe105</code> by clicking the “new folder” symbol, <img src="newfoldersymbol.png" alt="" />.</p>
+
+<p>Double-click the <code class="highlighter-rouge">BiGe105</code> folder to open it and make two new folders, one named <code class="highlighter-rouge">code</code> and another <code class="highlighter-rouge">data</code>. Your final file directory should look like so (note that I made my <code class="highlighter-rouge">BiGe105</code> folder on my Desktop):</p>
+
+<center>
+<img src="directory_structure.png" width="50%" />
+</center>
+
+<p>That’s it! You’ve now made the file structure for the class.</p>
+
+<p>All of the Jupyter Notebooks you use in the course will be made and wirttin in the <code class="highlighter-rouge">code</code> folder. All data you have to load will live in the <code class="highlighter-rouge">data</code> directory. This structure will make things easier for the TA when it comes to grading your work, but will also help you maintain a tidy homework folder.</p>
+
+<h3 id="starting-a-jupyter-notebook">Starting A Jupyter Notebook</h3>
+
+<p>Let’s open a new notebook. Navigate to your <code class="highlighter-rouge">code</code> folder and click the <code class="highlighter-rouge">+</code> in the sidebar. This will open a new “Launcher” window where a variety of new filetypes can be opened. One of them will be a “Python 3 Notebook”.</p>
+
+<center>
+<img src="launcher.png" width="50%" />
+</center>
+
+<p>Clicking this will open a new Jupyter Nook named <code class="highlighter-rouge">Untitled.ipynb</code>.</p>
+
+<center>
+<img src="notebook.png" width="50%" />
+</center>
+
+<p>Right-click the “Untitled.ipynb” in the sidebar and rename it to something more informative, say <code class="highlighter-rouge">testing_out_python.ipynb</code>.</p>
+
+<p>The right-ha d side of your screen is the actual notebook. You will see a “code cell” (grey rectangle) along with a bunch of other boxes above it. In the <a href="http://rpgroup.caltech.edu/bige105/tutorials/t0b/t0b_jupyter_notebooks">Jupyter Notebook Tutorial</a> we cover these buttons in detail. For now, we’ll just check to make sure you have a working Python distribution.</p>
+
+<h2 id="hello-pangaea"><code class="highlighter-rouge">Hello, Pangaea</code></h2>
+
+<p>Let’s write our first bit of Python code to make sure that everything is working correctly on your system. In Jupyter Notebooks, all code is typed in grey rectangles called “code cells”. When a cell is “run”, the result of the computation is shown underneath the code cell. Double-click the code cell on the right-hand side of your JupyterLab window and type the following:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># This a comment and won't be read by Python. All comments start with `#`
+</span><span class="k">print</span><span class="p">(</span><span class="s">'Hello, Pangaea. Long time, no see. This sentence should be printed below by pressing `Shift + Enter` '</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Hello, Pangaea. Long time, no see. This sentence should be printed below by pressing `Shift + Enter` 
+</code></pre></div></div>
+
+<p>Note that you cannot edit the text <em>below</em> the code cell. This is the output of the <code class="highlighter-rouge">print()</code> function in Python.</p>
+
+<h3 id="our-first-plot">Our First Plot</h3>
+<p>This class will often require you to generate plots of your computations coupled with some comments about your interpretation. Let’s try to generate a simple plot here to make sure everything is working with your distribution. Don’t worry too much about the syntax for right now. The basics of Python syntax are given in <a href="http://rpgroup.caltech.edu/bige105/tutorials/t0b/t0c_python_syntax_and_plotting">Tutorial 0c</a>.</p>
+
+<p>Add a new code cell beneath the one that contains <code class="highlighter-rouge">print('Hello, Pangaea')</code>. When you execute a cell using <code class="highlighter-rouge">Shift + Enter</code>, a new cell should appear beneath what you just ran. If it’s not there, you can make a new cell by clicking the <code class="highlighter-rouge">+</code> icon in the notebook menu bar. In the new cell, type the following:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Import Python packages necessary for this script
+</span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="n">sns</span>
+<span class="n">sns</span><span class="o">.</span><span class="nb">set</span><span class="p">()</span>
+
+<span class="c1"># Generate a beautiful sinusoidal curve
+</span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mi">500</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">x</span><span class="p">)))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s">'$x$'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s">'$y$'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p><img src="t0a_setting_up_python_files/t0a_setting_up_python_16_0.png" alt="png" /></p>
+
+<p>If you can see this plot in your notebook, then congratulations! You have a working Python 3.7 distribution.</p>
+
+<h3 id="installing-extra-packages-using-conda">Installing extra packages using Conda</h3>
+
+<p>With the Anaconda Python distribution, you can install verified packages (scientific and non-scientific) through the <a href="http://conda.pydata.org/docs/">Conda</a> package manager. <strong>Note that you do not have to download Conda separately. This comes packaged with Anaconda</strong>. To install packages through Conda, we must manually enter their names on the command line.</p>
+
+<p>One of your first computational homeworks will involve doing some rudimentary bioinformatics to compare sequences of the  <code class="highlighter-rouge">ENAM</code> gene among cetaceans. To do so, we will use the <a href="http://biopython.org">BioPython</a> package which does not come prepackaged along with Anaconda. Let’s install it using the command line that is built in with Jupyter Lab.</p>
+
+<p>On the sidebar menu, open a new Launcher window by clicking the <code class="highlighter-rouge">+</code> button (just like we did to make a new Jupyter Notebook). Now, instead of opening a notebook, choose the “Terminal” selection at the bottom.</p>
+
+<center>
+<img src="launch_terminal.png" width="50%" />
+</center>
+
+<p>This will open a new tab on the right-hand side of your screen and will launch a shell environment (yours may look different than mine). Click on the command line, type</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda install biopython
+</code></pre></div></div>
+
+<p>and hit enter. After a few seconds (or a minute, depending on your internet connection), you should be greeted with the following screen:</p>
+
+<center>
+<img src="install_biopython.png" width="50%" />
+</center>
+
+<p>Note that at the bottom it asks for your permission to install teh package and update its dependencies, if necessary. Type <code class="highlighter-rouge">y</code> and then hit enter. Biopython will then be installed.</p>
+
+      <div class="page-footer">
+      </div>
+    </div> <!-- End Wrap Content -->
+  </div> <!-- End Page Content -->
+</article> <!-- End Article Page -->
+
+</div>
+
+  </div>
+  
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+</script> <!-- End Analytics -->
+
+</body>
+</html>

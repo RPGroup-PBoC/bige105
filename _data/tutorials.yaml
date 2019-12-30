@@ -1,6 +1,6 @@
 - tut:
   title: "Tutorial 0a: Setting up your computer"
-  link: t0a_setting_up
+  link: t0a/t0a_setting_up_python
   desc:  This tutorial will walk you thorugh setting Python 3.8 on your computer
   pic: tut0a.png
 
