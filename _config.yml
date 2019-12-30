@@ -2,7 +2,7 @@ title: BiGe105
 description: Evolution
 
 permalink: ':title/'
-baseurl:  "/" # "/" # the subpath of your site, In most cases this can be left blank
+baseurl:  "/" #  the subpath of your site, In most cases this can be left blank
 url: "" # Base of your website.In most cases, this will be left blank
 
 # You can include social icons
