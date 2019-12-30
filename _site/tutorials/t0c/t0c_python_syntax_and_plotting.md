@@ -24,10 +24,23 @@ With these three commands memorized, you should be able to navigate around your 
 As is typical when learning any programming language, we'll start by making our computer speak to us. We'll do this by using one of the [many standard functions in Python](https://docs.python.org/3/library/functions.html), the `print` function.  
 
 
+   <div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> input </code>
+
+    </div>
 ```python
 print('Hello, world')
 ```
 
+
+   <div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> output </code>
+
+    </div>
     Hello, world
 
 
@@ -36,12 +49,25 @@ In the above code, we called the `print` function and passed the text `Hello, wo
 While our `'Hello, world.'` is a string, this function can also be used to print other types such as integers (**`int`**), decimals (**`float`**), and `True/False` (**`bool`**) by passing them as arguments to the `print` function. 
 
 
+   <div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> input </code>
+
+    </div>
 ```python
 print(10)
 print(3.14159)
 print(True)
 ```
 
+
+   <div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> output </code>
+
+    </div>
     10
     3.14159
     True
@@ -50,6 +76,12 @@ print(True)
 In the above code, it would be nice to be able to add a **comment** about what the type of each variable is that we are printing, but we don't want this comment to be interpreted by Python. By adding a pound symbol (`#`) before a line of code, we can force Python to ignore it.  
 
 
+   <div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> input </code>
+
+    </div>
 ```python
 # Print an integer
 print(10)
@@ -61,6 +93,13 @@ print(3.14159)
 print(True)
 ```
 
+
+   <div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> output </code>
+
+    </div>
     10
     3.14159
     True
@@ -75,6 +114,12 @@ We see that we get the same result.
 The crux of scientific programming is the ability to perform mathematical operations. Python can do a variety of simple mathematical functions by default.  
 
 
+   <div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> input </code>
+
+    </div>
 ```python
 print(1 + 1) # this should be 2
 print(4 / 2) # this should be 2
@@ -82,6 +127,13 @@ print(40 - 38) # this should be 2
 print(2^4) # this should be 16
 ```
 
+
+   <div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> output </code>
+
+    </div>
     2
     2.0
     2
@@ -91,26 +143,58 @@ print(2^4) # this should be 16
 Everything looks good, but what happened at the end? In Python, you exponentiate terms using a double asterisk (`**`) and **not** a carrot (`^`). The carrot executes a bitwise operation which is completely different than exponentiation. 
 
 
+   <div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> input </code>
+
+    </div>
 ```python
 print(2**4) # this should be 16
 ```
 
+
+   <div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> output </code>
+
+    </div>
     16
 
 
 Note that the all mathematical operations other than addition (`+`) can only be done on ints, floats, or bool. The addition operator can be performed on strings too! Let's say we want to stitch together two components of a sequence together.
 
 
+   <div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> input </code>
+
+    </div>
 ```python
 print('AATAGGCGATAG' + 'tttgaggcgggggc')
 ```
 
+
+   <div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> output </code>
+
+    </div>
     AATAGGCGATAGtttgaggcgggggc
 
 
 While all of these operations are simple, we would like some way in which can store a number for further use. We can do this by assigning the output of an operation to a **variable**.
 
 
+   <div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> input </code>
+
+    </div>
 ```python
 # Assign our sequences to variables.
 seq_1 = 'AATAGGCGATAG'
@@ -119,12 +203,25 @@ stitched_seq = seq_1 + seq_2
 print(stitched_seq)
 ```
 
+
+   <div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> output </code>
+
+    </div>
     AATAGGCGATAGtttgaggcgggggc
 
 
 We can call **methods** on some data types in Python. For example, we can convert our stiteched string into all upper or lower case using the `upper()` or `lower()` method. 
 
 
+   <div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> input </code>
+
+    </div>
 ```python
 # Convert the stitched sequences to all upper and all lower case.
 upper_seq = stitched_seq.upper()
@@ -133,6 +230,13 @@ print(upper_seq)
 print(lower_seq)
 ```
 
+
+   <div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> output </code>
+
+    </div>
     AATAGGCGATAGTTTGAGGCGGGGGC
     aataggcgatagtttgaggcgggggc
 
@@ -140,6 +244,12 @@ print(lower_seq)
 We can also count the occurrences of a given character in a string by using the `count()` method. 
 
 
+   <div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> input </code>
+
+    </div>
 ```python
 # Count the number of the different bases in the stitched DNA sequence.
 num_A = upper_seq.count('A')
@@ -154,6 +264,13 @@ print(num_C)
 print(num_G)
 ```
 
+
+   <div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> output </code>
+
+    </div>
     6
     5
     3
@@ -165,6 +282,12 @@ print(num_G)
 So far, we've learned about floats, ints, bools, and strings as well as how to assign them to variables. But what about when we want to work with a series of these kinds of values? There are a few ways in which we can do this $-$ **lists** (values within brackets `[]`), **tuples** (values within parenthesis `()`), and **arrays** (which we'll learn about in the next section).
 
 
+   <div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> input </code>
+
+    </div>
 ```python
 # Generate some lists and arrays.
 example_list = [1, 2, 3]
@@ -177,6 +300,12 @@ mixed_type_list = [1, 2, 'biology', 'geology', 10.028]
 Note that lists and arrays can have mixed types. Once we have a list or a tuple, we can extract a single value or a range of values by **indexing**. 
 
 
+   <div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> input </code>
+
+    </div>
 ```python
 # Index some values.
 print(example_list[0])  # should be 1
@@ -185,6 +314,13 @@ print(example_list[0:2]) # should be 1 and 2
 print(example_list[-1])  # This will give the last entry of the list 
 ```
 
+
+   <div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> output </code>
+
+    </div>
     1
     3
     [1, 2]
@@ -196,6 +332,12 @@ To get the first value of the list, I started with zero. **In Python, indexing b
 So what exactly is the difference between tuples and lists? **Lists are mutable. Tuples are not**. This means once a value in a tuple is set in place, it can't be changed without redefining the tuple. Let's demonstrate this by trying to change the first value of our `example_list` and `example_tuple`.
 
 
+   <div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> input </code>
+
+    </div>
 ```python
 # Change the first entry to 1000 
 example_list[0] = 1000
@@ -204,6 +346,13 @@ example_tuple[0] = 1000
 print(example_tuple)
 ```
 
+
+   <div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> output </code>
+
+    </div>
     [1000, 2, 3]
 
 
@@ -227,6 +376,12 @@ Python yelled at me and told me that I can't assign a current value in a tuple. 
 Lists **are** mutable, but we have to be careful with performing arithmetic operations on them. For example, the operators `+`,`-`, `**`, and `/` will give you errors. However, the `*` operator will concatenate a list with itself.
 
 
+   <div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> input </code>
+
+    </div>
 ```python
 # Do list arithmetic.
 next_list = [2, 4, 6]
@@ -234,6 +389,13 @@ print(next_list * 2)  # Should be [2, 4, 6, 2, 4, 6]
 print(next_list * 5)  # Should be the same list repeated five times.
 ```
 
+
+   <div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> output </code>
+
+    </div>
     [2, 4, 6, 2, 4, 6]
     [2, 4, 6, 2, 4, 6, 2, 4, 6, 2, 4, 6, 2, 4, 6]
 
@@ -245,6 +407,12 @@ So how do we do more complicated mathematical operations on a series of numbers?
 When you open a Python interpreter or run a script, you are only loading the 'standard' Python packages. This means that you are not loading everything you could possibly want, but only the packages you need to perform the task. To perform more elaborate computation in Python, we will need to import an external **module** called NumPy. 
 
 
+   <div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> input </code>
+
+    </div>
 ```python
 # Import the NumPy module and give it an alias
 import numpy as np
@@ -257,6 +425,12 @@ Let's talk about the syntax of the above line. I told the Python interpreter tha
 Numpy is the premier numerical computing module for Python. With it, we have myriad functions for peforming numerical operations.
 
 
+   <div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> input </code>
+
+    </div>
 ```python
 # Demonstrate the power of numpy.
 print(np.exp(-1))
@@ -265,6 +439,13 @@ print(np.cos(2 * np.sin(5)))
 print(np.sin(2 * np.pi))
 ```
 
+
+   <div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> output </code>
+
+    </div>
     0.36787944117144233
     0.8414709848078965
     -0.3401272599624713
@@ -274,6 +455,12 @@ print(np.sin(2 * np.pi))
 With numpy comes a new data type called **numpy arrays**. These are series of values which are mutable (just like lists) which cannot have a mixed data type (unlike lists and tuples).  We can also perform mathematical operations on arrays.
 
 
+   <div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> input </code>
+
+    </div>
 ```python
 # Demonstrate the magic of numpy arrays
 my_array = np.array([1, 2, 3])
@@ -285,6 +472,13 @@ print(my_array * my_array)  # Element-wise multiplication
 print(np.dot(my_array, my_array)) # Dot product of two arrays
 ```
 
+
+   <div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> output </code>
+
+    </div>
     [2 4 6]
     [0.33333333 0.66666667 1.        ]
     [1 4 9]
@@ -294,6 +488,12 @@ print(np.dot(my_array, my_array)) # Dot product of two arrays
 Numpy arrays are not limited to being one-dimensional. We can create n-dimensional numpy arrays with ease.
 
 
+   <div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> input </code>
+
+    </div>
 ```python
 # Create multi-dimensional arrays
 one_dimensional_array = np.array([1, 2, 3, 4])
@@ -304,6 +504,13 @@ print(one_dimensional_array)
 print(two_dimensional_array)
 ```
 
+
+   <div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> output </code>
+
+    </div>
     [1 2 3 4]
     [[1 2 3 4]
      [5 6 7 8]]
@@ -312,6 +519,12 @@ print(two_dimensional_array)
 We can even make numpy make series of values for us! This will be very useful once we start manipulating images and making plots. 
 
 
+   <div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> input </code>
+
+    </div>
 ```python
 # Automatically generate series of values.
 linear_spaced = np.linspace(0, 10, 1000)  # Generates 1000 points between 0 and 10 
@@ -328,6 +541,12 @@ It is impossible to perform scientific computing in Python without using numpy.
 It's useful to be able to see some properties of variables we assign. Let's look back at the sequence strings we made earlier and extract some of their properties. 
 
 
+   <div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> input </code>
+
+    </div>
 ```python
 # Generate some variable with different types.
 string_type = 'AATGATTCG'
@@ -348,6 +567,13 @@ print(type(tuple_type))
 print(type(nparray_type))
 ```
 
+
+   <div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> output </code>
+
+    </div>
     <class 'str'>
     <class 'float'>
     <class 'bool'>
@@ -360,18 +586,37 @@ print(type(nparray_type))
 Note that even though the elements of our `list_type` and `tuple_type` have mixed types, this command tells us what the type of the *object* is (i.e. `list` and `tuple`). We can force changes in the type of a variable with ease. To demonstrate, let's break up our stitched sequence into the individual basepairs. 
 
 
+   <div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> input </code>
+
+    </div>
 ```python
 # Change the type of a varible
 basepairs = list(stitched_seq)
 print(basepairs)
 ```
 
+
+   <div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> output </code>
+
+    </div>
     ['A', 'A', 'T', 'A', 'G', 'G', 'C', 'G', 'A', 'T', 'A', 'G', 't', 't', 't', 'g', 'a', 'g', 'g', 'c', 'g', 'g', 'g', 'g', 'g', 'c']
 
 
 We can  also convert numbers to strings. This is useful if we want to print a sentence including the output from some other operation. Let's check the length of our two DNA sequences and print it in a sentence.
 
 
+   <div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> input </code>
+
+    </div>
 ```python
 # Determine the lengths of the two sequences.
 seq_1_len = len(seq_1) 
@@ -379,16 +624,36 @@ seq_2_len = len(seq_2)
 print("The length of our sequence is " + str(seq_1_len + seq_2_len) + ' bases')
 ```
 
+
+   <div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> output </code>
+
+    </div>
     The length of our sequence is 26 bases
 
 
 We've created *a lot* of variable so far in this tutorial. It's nice to be able to look at what variables exist in our environment as well as get some information. Let's take a look at everything we've made so far. 
 
 
+   <div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> input </code>
+
+    </div>
 ```python
 whos
 ```
 
+
+   <div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> output </code>
+
+    </div>
     Variable                Type       Data/Info
     --------------------------------------------
     aranged                 ndarray    25: 25 elems, type `int64`, 200 bytes
@@ -436,6 +701,12 @@ In Python, spacing and indentation matters. When we define a function and perfor
 The best way to learn is by doing. Let's write a function to add two DNA sequences together and determine its [GC content](), the percentage of the DNA that is either guanine or cytosine.
 
 
+   <div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> input </code>
+
+    </div>
 ```python
 def compute_gc(seq_a, seq_b, print_seq=True):
     """
@@ -477,6 +748,12 @@ We did a lot of complicated procedures in this code, so let's go through it piec
 Each line in this function was one-tab away from the definition statement of the function. Note that we were never specific about *what* the value of `seq_a` and what `seq_b` are. 
 
 
+   <div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> input </code>
+
+    </div>
 ```python
 # Add some various values together.
 all_A = 'aaaa'
@@ -490,6 +767,13 @@ AC_only = compute_gc(all_A, all_C)
 print(AT_only, GC_only, AC_only)
 ```
 
+
+   <div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> output </code>
+
+    </div>
     aaaaTttt
     GgGgCcCC
     aaaaCcCC
@@ -500,6 +784,12 @@ We should be pleased to see that `AT_only` has a GC content of 0, `GC_only` has 
 Since we added the automatic printing of values as a **keyword argument**, we can easily tell our function to stop printing things.  
 
 
+   <div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> input </code>
+
+    </div>
 ```python
 AT_only = compute_gc(all_A, all_T, print_seq=False) 
 GC_only = compute_gc(all_G, all_C, print_seq=False)
@@ -508,6 +798,13 @@ AC_only = compute_gc(all_A, all_C, print_seq=False)
 print(AT_only, GC_only, AC_only)
 ```
 
+
+   <div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> output </code>
+
+    </div>
     0.0 1.0 0.5
 
 
@@ -533,6 +830,12 @@ Before we think of how the specific code should be written, let's write out what
 With this idea in place, let's go through the code.
 
 
+   <div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> input </code>
+
+    </div>
 ```python
 # Set the initial number of cells in the experiment.
 number_of_cells = 1
@@ -571,11 +874,24 @@ Also notice that, just like in functions, the code is indented. Everything that 
 Let's take a look at our `N_d` list and see how the number of cells changed over time. 
 
 
+   <div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> input </code>
+
+    </div>
 ```python
 # Print the result of our simulation.
 print(N_d)
 ```
 
+
+   <div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> output </code>
+
+    </div>
     [1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024]
 
 
@@ -586,6 +902,12 @@ It looks like our function worked! But can we tell this is exponential growth? B
 There are many plotting utilities available for Python. Some notable examples include [Bokeh](http://bokeh.pydata.org/en/latest) for interactive plotting, [Seaborn](http://seaborn.pydata.org) and [Altair](https://altair-viz.github.io) for statistical visualization, and a Python port of the popular R programming language plotting utility [ggplot](https://github.com/yhat/ggplot). While interactive plotting is likely the visualization tool of the future, the most common (and full featured) plotting utility for Python as of this writing is [matplotlib](http://matplotlib.org). It was designed with the plotting syntax and style of MATLAB in mind and many of the commands are similiar. As is the case with numpy, matplotlib is not within the standard libray of Python and must be imported.
 
 
+   <div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> input </code>
+
+    </div>
 ```python
 # Load the plotting utility matplotlib with an alias plt.
 import matplotlib.pyplot as plt
@@ -597,6 +919,12 @@ import matplotlib.pyplot as plt
 We would like to see if our simulated cells appear to grow exponentially with time. To do so, we would like to plot the number of cells we have at division number $d$ as a function of $d$. Before we do any plotting, let's generate a vector of division times that matches the size of our `N_d` vector. We can do this using some of the arrangement methods that we used earlier with numpy. Since we had measure at $d=0$, our new division vector must have a length of `number_of_divisions` + 1. 
 
 
+   <div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> input </code>
+
+    </div>
 ```python
 # Establish a vector of the division cycles
 division_vector = np.arange(0, number_of_divisions + 1, 1)
@@ -605,6 +933,12 @@ division_vector = np.arange(0, number_of_divisions + 1, 1)
 Now all that is left is to plot it! We can use the `plot` function of matplotlib to generate our scatterplot. We'll choose small circles as our markers and provide the approriate $x$ and $y$ labels as we always should. We'll also add a legend to our plot to show that these data poitns are from a simulation. 
 
 
+   <div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> input </code>
+
+    </div>
 ```python
 # Generate the plot.
 plt.plot(division_vector, N_d, 'o', label='simulation')
@@ -617,6 +951,13 @@ plt.ylabel('number of cells')
 plt.legend()
 ```
 
+
+   <div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> output </code>
+
+    </div>
 
 
 
@@ -633,6 +974,12 @@ In calling the `plt.plot()` function, we first passed it the $x$ and $y$ data, t
 To me, this plot is pretty ugly. Every aspect of this plot can be stylized to your liking, althought it will take a little bit of work. However, we can import the `seaborn` plotting utility which will stylize all of our plots and make them much clearer to interpret.
 
 
+   <div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> input </code>
+
+    </div>
 ```python
 import seaborn as sns
 sns.set()
@@ -641,6 +988,12 @@ sns.set()
  With this imported, let's go ahead and remake the plot from above. We'll also save it using the `plt.savefig` function. With this, you'll be able to insert your plots into the PDF assignments you will turn in. 
 
 
+   <div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> input </code>
+
+    </div>
 ```python
 # Generate the plot.
 plt.plot(division_vector, N_d, 'o', label='simulation')
@@ -655,6 +1008,13 @@ plt.savefig('growth_simulation.pdf')
 ```
 
 
+   <div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> output </code>
+
+    </div>
+
 ![png](t0c_python_syntax_and_plotting_files/t0c_python_syntax_and_plotting_84_0.png)
 
 
@@ -668,10 +1028,23 @@ While we have covered a lot of Python syntax, I don't expect you will have all o
 When you are typing away in the notebook or in an iPython terminal, you can pull up the documentation information for any function or attribute by typing the name followed by a question mark (`?`). For example (assuming you have `numpy` imported as `np`, you can get the documentation for the `np.random` module by typing the following.
 
 
+   <div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> input </code>
+
+    </div>
 ```python
 np.random?
 ```
 
+
+   <div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> output </code>
+
+    </div>
 
     [0;31mType:[0m        module
     [0;31mString form:[0m <module 'numpy.random' from '/Users/gchure/anaconda3/lib/python3.7/site-packages/numpy/random/__init__.py'>

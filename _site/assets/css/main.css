@@ -457,8 +457,8 @@ template {
 }
 
 .highlighter-rouge {
-  color: var(--primary-color);
-  font-weight: 700;
+  color: #000;
+  font-weight: 400;
   padding-bottom: 10px;
   font-size:0.9em;
 }
@@ -833,7 +833,6 @@ pre {
 }
 
 pre code {
-  border: 0;
   padding-right: 0;
   padding-left: 0;
   overflow: auto;
@@ -841,6 +840,7 @@ pre code {
   word-wrap: break-word;
   word-break: break-all;
 }
+
 
 table {
 

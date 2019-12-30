@@ -193,9 +193,21 @@
 
 <p>As is typical when learning any programming language, we’ll start by making our computer speak to us. We’ll do this by using one of the <a href="https://docs.python.org/3/library/functions.html">many standard functions in Python</a>, the <code class="highlighter-rouge">print</code> function.</p>
 
+<div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> input </code>
+
+    </div>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">print</span><span class="p">(</span><span class="s">'Hello, world'</span><span class="p">)</span>
 </code></pre></div></div>
 
+<div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> output </code>
+
+    </div>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Hello, world
 </code></pre></div></div>
 
@@ -203,11 +215,23 @@
 
 <p>While our <code class="highlighter-rouge">'Hello, world.'</code> is a string, this function can also be used to print other types such as integers (<strong><code class="highlighter-rouge">int</code></strong>), decimals (<strong><code class="highlighter-rouge">float</code></strong>), and <code class="highlighter-rouge">True/False</code> (<strong><code class="highlighter-rouge">bool</code></strong>) by passing them as arguments to the <code class="highlighter-rouge">print</code> function.</p>
 
+<div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> input </code>
+
+    </div>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">print</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 <span class="k">print</span><span class="p">(</span><span class="mf">3.14159</span><span class="p">)</span>
 <span class="k">print</span><span class="p">(</span><span class="bp">True</span><span class="p">)</span>
 </code></pre></div></div>
 
+<div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> output </code>
+
+    </div>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>10
 3.14159
 True
@@ -215,6 +239,12 @@ True
 
 <p>In the above code, it would be nice to be able to add a <strong>comment</strong> about what the type of each variable is that we are printing, but we don’t want this comment to be interpreted by Python. By adding a pound symbol (<code class="highlighter-rouge">#</code>) before a line of code, we can force Python to ignore it.</p>
 
+<div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> input </code>
+
+    </div>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Print an integer
 </span><span class="k">print</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 
@@ -225,6 +255,12 @@ True
 </span><span class="k">print</span><span class="p">(</span><span class="bp">True</span><span class="p">)</span>
 </code></pre></div></div>
 
+<div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> output </code>
+
+    </div>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>10
 3.14159
 True
@@ -238,12 +274,24 @@ True
 
 <p>The crux of scientific programming is the ability to perform mathematical operations. Python can do a variety of simple mathematical functions by default.</p>
 
+<div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> input </code>
+
+    </div>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">print</span><span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="c1"># this should be 2
 </span><span class="k">print</span><span class="p">(</span><span class="mi">4</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span> <span class="c1"># this should be 2
 </span><span class="k">print</span><span class="p">(</span><span class="mi">40</span> <span class="o">-</span> <span class="mi">38</span><span class="p">)</span> <span class="c1"># this should be 2
 </span><span class="k">print</span><span class="p">(</span><span class="mi">2</span><span class="o">^</span><span class="mi">4</span><span class="p">)</span> <span class="c1"># this should be 16
 </span></code></pre></div></div>
 
+<div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> output </code>
+
+    </div>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>2
 2.0
 2
@@ -252,22 +300,52 @@ True
 
 <p>Everything looks good, but what happened at the end? In Python, you exponentiate terms using a double asterisk (<code class="highlighter-rouge">**</code>) and <strong>not</strong> a carrot (<code class="highlighter-rouge">^</code>). The carrot executes a bitwise operation which is completely different than exponentiation.</p>
 
+<div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> input </code>
+
+    </div>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">print</span><span class="p">(</span><span class="mi">2</span><span class="o">**</span><span class="mi">4</span><span class="p">)</span> <span class="c1"># this should be 16
 </span></code></pre></div></div>
 
+<div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> output </code>
+
+    </div>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>16
 </code></pre></div></div>
 
 <p>Note that the all mathematical operations other than addition (<code class="highlighter-rouge">+</code>) can only be done on ints, floats, or bool. The addition operator can be performed on strings too! Let’s say we want to stitch together two components of a sequence together.</p>
 
+<div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> input </code>
+
+    </div>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">print</span><span class="p">(</span><span class="s">'AATAGGCGATAG'</span> <span class="o">+</span> <span class="s">'tttgaggcgggggc'</span><span class="p">)</span>
 </code></pre></div></div>
 
+<div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> output </code>
+
+    </div>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>AATAGGCGATAGtttgaggcgggggc
 </code></pre></div></div>
 
 <p>While all of these operations are simple, we would like some way in which can store a number for further use. We can do this by assigning the output of an operation to a <strong>variable</strong>.</p>
 
+<div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> input </code>
+
+    </div>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Assign our sequences to variables.
 </span><span class="n">seq_1</span> <span class="o">=</span> <span class="s">'AATAGGCGATAG'</span>
 <span class="n">seq_2</span> <span class="o">=</span> <span class="s">'tttgaggcgggggc'</span>
@@ -275,11 +353,23 @@ True
 <span class="k">print</span><span class="p">(</span><span class="n">stitched_seq</span><span class="p">)</span>
 </code></pre></div></div>
 
+<div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> output </code>
+
+    </div>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>AATAGGCGATAGtttgaggcgggggc
 </code></pre></div></div>
 
 <p>We can call <strong>methods</strong> on some data types in Python. For example, we can convert our stiteched string into all upper or lower case using the <code class="highlighter-rouge">upper()</code> or <code class="highlighter-rouge">lower()</code> method.</p>
 
+<div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> input </code>
+
+    </div>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Convert the stitched sequences to all upper and all lower case.
 </span><span class="n">upper_seq</span> <span class="o">=</span> <span class="n">stitched_seq</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
 <span class="n">lower_seq</span> <span class="o">=</span> <span class="n">stitched_seq</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
@@ -287,12 +377,24 @@ True
 <span class="k">print</span><span class="p">(</span><span class="n">lower_seq</span><span class="p">)</span>
 </code></pre></div></div>
 
+<div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> output </code>
+
+    </div>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>AATAGGCGATAGTTTGAGGCGGGGGC
 aataggcgatagtttgaggcgggggc
 </code></pre></div></div>
 
 <p>We can also count the occurrences of a given character in a string by using the <code class="highlighter-rouge">count()</code> method.</p>
 
+<div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> input </code>
+
+    </div>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Count the number of the different bases in the stitched DNA sequence.
 </span><span class="n">num_A</span> <span class="o">=</span> <span class="n">upper_seq</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s">'A'</span><span class="p">)</span>
 <span class="n">num_T</span> <span class="o">=</span> <span class="n">upper_seq</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s">'T'</span><span class="p">)</span>
@@ -306,6 +408,12 @@ aataggcgatagtttgaggcgggggc
 <span class="k">print</span><span class="p">(</span><span class="n">num_G</span><span class="p">)</span>
 </code></pre></div></div>
 
+<div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> output </code>
+
+    </div>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>6
 5
 3
@@ -316,6 +424,12 @@ aataggcgatagtttgaggcgggggc
 
 <p>So far, we’ve learned about floats, ints, bools, and strings as well as how to assign them to variables. But what about when we want to work with a series of these kinds of values? There are a few ways in which we can do this $-$ <strong>lists</strong> (values within brackets <code class="highlighter-rouge">[]</code>), <strong>tuples</strong> (values within parenthesis <code class="highlighter-rouge">()</code>), and <strong>arrays</strong> (which we’ll learn about in the next section).</p>
 
+<div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> input </code>
+
+    </div>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Generate some lists and arrays.
 </span><span class="n">example_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
 <span class="n">example_tuple</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
@@ -326,6 +440,12 @@ aataggcgatagtttgaggcgggggc
 
 <p>Note that lists and arrays can have mixed types. Once we have a list or a tuple, we can extract a single value or a range of values by <strong>indexing</strong>.</p>
 
+<div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> input </code>
+
+    </div>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Index some values.
 </span><span class="k">print</span><span class="p">(</span><span class="n">example_list</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>  <span class="c1"># should be 1
 </span><span class="k">print</span><span class="p">(</span><span class="n">example_tuple</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>  <span class="c1"># should be 3
@@ -333,6 +453,12 @@ aataggcgatagtttgaggcgggggc
 </span><span class="k">print</span><span class="p">(</span><span class="n">example_list</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>  <span class="c1"># This will give the last entry of the list 
 </span></code></pre></div></div>
 
+<div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> output </code>
+
+    </div>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1
 3
 [1, 2]
@@ -343,6 +469,12 @@ aataggcgatagtttgaggcgggggc
 
 <p>So what exactly is the difference between tuples and lists? <strong>Lists are mutable. Tuples are not</strong>. This means once a value in a tuple is set in place, it can’t be changed without redefining the tuple. Let’s demonstrate this by trying to change the first value of our <code class="highlighter-rouge">example_list</code> and <code class="highlighter-rouge">example_tuple</code>.</p>
 
+<div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> input </code>
+
+    </div>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Change the first entry to 1000 
 </span><span class="n">example_list</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1000</span>
 <span class="k">print</span><span class="p">(</span><span class="n">example_list</span><span class="p">)</span>
@@ -350,6 +482,12 @@ aataggcgatagtttgaggcgggggc
 <span class="k">print</span><span class="p">(</span><span class="n">example_tuple</span><span class="p">)</span>
 </code></pre></div></div>
 
+<div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> output </code>
+
+    </div>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[1000, 2, 3]
 
 
@@ -372,12 +510,24 @@ TypeError: 'tuple' object does not support item assignment
 
 <p>Lists <strong>are</strong> mutable, but we have to be careful with performing arithmetic operations on them. For example, the operators <code class="highlighter-rouge">+</code>,<code class="highlighter-rouge">-</code>, <code class="highlighter-rouge">**</code>, and <code class="highlighter-rouge">/</code> will give you errors. However, the <code class="highlighter-rouge">*</code> operator will concatenate a list with itself.</p>
 
+<div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> input </code>
+
+    </div>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Do list arithmetic.
 </span><span class="n">next_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">]</span>
 <span class="k">print</span><span class="p">(</span><span class="n">next_list</span> <span class="o">*</span> <span class="mi">2</span><span class="p">)</span>  <span class="c1"># Should be [2, 4, 6, 2, 4, 6]
 </span><span class="k">print</span><span class="p">(</span><span class="n">next_list</span> <span class="o">*</span> <span class="mi">5</span><span class="p">)</span>  <span class="c1"># Should be the same list repeated five times.
 </span></code></pre></div></div>
 
+<div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> output </code>
+
+    </div>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[2, 4, 6, 2, 4, 6]
 [2, 4, 6, 2, 4, 6, 2, 4, 6, 2, 4, 6, 2, 4, 6]
 </code></pre></div></div>
@@ -388,6 +538,12 @@ TypeError: 'tuple' object does not support item assignment
 
 <p>When you open a Python interpreter or run a script, you are only loading the ‘standard’ Python packages. This means that you are not loading everything you could possibly want, but only the packages you need to perform the task. To perform more elaborate computation in Python, we will need to import an external <strong>module</strong> called NumPy.</p>
 
+<div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> input </code>
+
+    </div>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Import the NumPy module and give it an alias
 </span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
 </code></pre></div></div>
@@ -398,6 +554,12 @@ TypeError: 'tuple' object does not support item assignment
 
 <p>Numpy is the premier numerical computing module for Python. With it, we have myriad functions for peforming numerical operations.</p>
 
+<div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> input </code>
+
+    </div>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Demonstrate the power of numpy.
 </span><span class="k">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">))</span>
 <span class="k">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
@@ -405,6 +567,12 @@ TypeError: 'tuple' object does not support item assignment
 <span class="k">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">))</span>
 </code></pre></div></div>
 
+<div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> output </code>
+
+    </div>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>0.36787944117144233
 0.8414709848078965
 -0.3401272599624713
@@ -413,6 +581,12 @@ TypeError: 'tuple' object does not support item assignment
 
 <p>With numpy comes a new data type called <strong>numpy arrays</strong>. These are series of values which are mutable (just like lists) which cannot have a mixed data type (unlike lists and tuples).  We can also perform mathematical operations on arrays.</p>
 
+<div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> input </code>
+
+    </div>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Demonstrate the magic of numpy arrays
 </span><span class="n">my_array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
 
@@ -423,6 +597,12 @@ TypeError: 'tuple' object does not support item assignment
 </span><span class="k">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">my_array</span><span class="p">,</span> <span class="n">my_array</span><span class="p">))</span> <span class="c1"># Dot product of two arrays
 </span></code></pre></div></div>
 
+<div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> output </code>
+
+    </div>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[2 4 6]
 [0.33333333 0.66666667 1.        ]
 [1 4 9]
@@ -431,6 +611,12 @@ TypeError: 'tuple' object does not support item assignment
 
 <p>Numpy arrays are not limited to being one-dimensional. We can create n-dimensional numpy arrays with ease.</p>
 
+<div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> input </code>
+
+    </div>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Create multi-dimensional arrays
 </span><span class="n">one_dimensional_array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">])</span>
 <span class="n">two_dimensional_array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span>
@@ -440,6 +626,12 @@ TypeError: 'tuple' object does not support item assignment
 <span class="k">print</span><span class="p">(</span><span class="n">two_dimensional_array</span><span class="p">)</span>
 </code></pre></div></div>
 
+<div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> output </code>
+
+    </div>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[1 2 3 4]
 [[1 2 3 4]
  [5 6 7 8]]
@@ -447,6 +639,12 @@ TypeError: 'tuple' object does not support item assignment
 
 <p>We can even make numpy make series of values for us! This will be very useful once we start manipulating images and making plots.</p>
 
+<div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> input </code>
+
+    </div>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Automatically generate series of values.
 </span><span class="n">linear_spaced</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>  <span class="c1"># Generates 1000 points between 0 and 10 
 </span><span class="n">log_spaced</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">logspace</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">200</span><span class="p">)</span> <span class="c1"># Generates 200 points logarithmically spaced 
@@ -461,6 +659,12 @@ TypeError: 'tuple' object does not support item assignment
 
 <p>It’s useful to be able to see some properties of variables we assign. Let’s look back at the sequence strings we made earlier and extract some of their properties.</p>
 
+<div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> input </code>
+
+    </div>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Generate some variable with different types.
 </span><span class="n">string_type</span> <span class="o">=</span> <span class="s">'AATGATTCG'</span>
 <span class="n">float_type</span> <span class="o">=</span> <span class="mf">3.14159</span>
@@ -480,6 +684,12 @@ TypeError: 'tuple' object does not support item assignment
 <span class="k">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">nparray_type</span><span class="p">))</span>
 </code></pre></div></div>
 
+<div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> output </code>
+
+    </div>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;class 'str'&gt;
 &lt;class 'float'&gt;
 &lt;class 'bool'&gt;
@@ -491,30 +701,66 @@ TypeError: 'tuple' object does not support item assignment
 
 <p>Note that even though the elements of our <code class="highlighter-rouge">list_type</code> and <code class="highlighter-rouge">tuple_type</code> have mixed types, this command tells us what the type of the <em>object</em> is (i.e. <code class="highlighter-rouge">list</code> and <code class="highlighter-rouge">tuple</code>). We can force changes in the type of a variable with ease. To demonstrate, let’s break up our stitched sequence into the individual basepairs.</p>
 
+<div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> input </code>
+
+    </div>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Change the type of a varible
 </span><span class="n">basepairs</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">stitched_seq</span><span class="p">)</span>
 <span class="k">print</span><span class="p">(</span><span class="n">basepairs</span><span class="p">)</span>
 </code></pre></div></div>
 
+<div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> output </code>
+
+    </div>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>['A', 'A', 'T', 'A', 'G', 'G', 'C', 'G', 'A', 'T', 'A', 'G', 't', 't', 't', 'g', 'a', 'g', 'g', 'c', 'g', 'g', 'g', 'g', 'g', 'c']
 </code></pre></div></div>
 
 <p>We can  also convert numbers to strings. This is useful if we want to print a sentence including the output from some other operation. Let’s check the length of our two DNA sequences and print it in a sentence.</p>
 
+<div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> input </code>
+
+    </div>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Determine the lengths of the two sequences.
 </span><span class="n">seq_1_len</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">seq_1</span><span class="p">)</span> 
 <span class="n">seq_2_len</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">seq_2</span><span class="p">)</span>
 <span class="k">print</span><span class="p">(</span><span class="s">"The length of our sequence is "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">seq_1_len</span> <span class="o">+</span> <span class="n">seq_2_len</span><span class="p">)</span> <span class="o">+</span> <span class="s">' bases'</span><span class="p">)</span>
 </code></pre></div></div>
 
+<div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> output </code>
+
+    </div>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>The length of our sequence is 26 bases
 </code></pre></div></div>
 
 <p>We’ve created <em>a lot</em> of variable so far in this tutorial. It’s nice to be able to look at what variables exist in our environment as well as get some information. Let’s take a look at everything we’ve made so far.</p>
 
+<div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> input </code>
+
+    </div>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">whos</span>
 </code></pre></div></div>
 
+<div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> output </code>
+
+    </div>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Variable                Type       Data/Info
 --------------------------------------------
 aranged                 ndarray    25: 25 elems, type `int64`, 200 bytes
@@ -561,6 +807,12 @@ upper_seq               str        AATAGGCGATAGTTTGAGGCGGGGGC
 
 <p>The best way to learn is by doing. Let’s write a function to add two DNA sequences together and determine its <a href="">GC content</a>, the percentage of the DNA that is either guanine or cytosine.</p>
 
+<div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> input </code>
+
+    </div>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">compute_gc</span><span class="p">(</span><span class="n">seq_a</span><span class="p">,</span> <span class="n">seq_b</span><span class="p">,</span> <span class="n">print_seq</span><span class="o">=</span><span class="bp">True</span><span class="p">):</span>
     <span class="s">"""
     Stitches together two DNA sequences (seq_a and seq_b) into a single sequence
@@ -602,6 +854,12 @@ upper_seq               str        AATAGGCGATAGTTTGAGGCGGGGGC
 
 <p>Each line in this function was one-tab away from the definition statement of the function. Note that we were never specific about <em>what</em> the value of <code class="highlighter-rouge">seq_a</code> and what <code class="highlighter-rouge">seq_b</code> are.</p>
 
+<div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> input </code>
+
+    </div>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Add some various values together.
 </span><span class="n">all_A</span> <span class="o">=</span> <span class="s">'aaaa'</span>
 <span class="n">all_T</span> <span class="o">=</span> <span class="s">'Tttt'</span>
@@ -614,6 +872,12 @@ upper_seq               str        AATAGGCGATAGTTTGAGGCGGGGGC
 </span><span class="k">print</span><span class="p">(</span><span class="n">AT_only</span><span class="p">,</span> <span class="n">GC_only</span><span class="p">,</span> <span class="n">AC_only</span><span class="p">)</span>
 </code></pre></div></div>
 
+<div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> output </code>
+
+    </div>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>aaaaTttt
 GgGgCcCC
 aaaaCcCC
@@ -623,6 +887,12 @@ aaaaCcCC
 <p>We should be pleased to see that <code class="highlighter-rouge">AT_only</code> has a GC content of 0, <code class="highlighter-rouge">GC_only</code> has a GC content of 1.0, and <code class="highlighter-rouge">AC_only</code> has a value of 0.5, as we predicted.
 Since we added the automatic printing of values as a <strong>keyword argument</strong>, we can easily tell our function to stop printing things.</p>
 
+<div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> input </code>
+
+    </div>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">AT_only</span> <span class="o">=</span> <span class="n">compute_gc</span><span class="p">(</span><span class="n">all_A</span><span class="p">,</span> <span class="n">all_T</span><span class="p">,</span> <span class="n">print_seq</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span> 
 <span class="n">GC_only</span> <span class="o">=</span> <span class="n">compute_gc</span><span class="p">(</span><span class="n">all_G</span><span class="p">,</span> <span class="n">all_C</span><span class="p">,</span> <span class="n">print_seq</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
 <span class="n">AC_only</span> <span class="o">=</span> <span class="n">compute_gc</span><span class="p">(</span><span class="n">all_A</span><span class="p">,</span> <span class="n">all_C</span><span class="p">,</span> <span class="n">print_seq</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>  
@@ -630,6 +900,12 @@ Since we added the automatic printing of values as a <strong>keyword argument</s
 </span><span class="k">print</span><span class="p">(</span><span class="n">AT_only</span><span class="p">,</span> <span class="n">GC_only</span><span class="p">,</span> <span class="n">AC_only</span><span class="p">)</span>
 </code></pre></div></div>
 
+<div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> output </code>
+
+    </div>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>0.0 1.0 0.5
 </code></pre></div></div>
 
@@ -654,6 +930,12 @@ Since we added the automatic printing of values as a <strong>keyword argument</s
 
 <p>With this idea in place, let’s go through the code.</p>
 
+<div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> input </code>
+
+    </div>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Set the initial number of cells in the experiment.
 </span><span class="n">number_of_cells</span> <span class="o">=</span> <span class="mi">1</span>
 
@@ -693,10 +975,22 @@ Since we added the automatic printing of values as a <strong>keyword argument</s
 
 <p>Let’s take a look at our <code class="highlighter-rouge">N_d</code> list and see how the number of cells changed over time.</p>
 
+<div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> input </code>
+
+    </div>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Print the result of our simulation.
 </span><span class="k">print</span><span class="p">(</span><span class="n">N_d</span><span class="p">)</span>
 </code></pre></div></div>
 
+<div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> output </code>
+
+    </div>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024]
 </code></pre></div></div>
 
@@ -706,6 +1000,12 @@ Since we added the automatic printing of values as a <strong>keyword argument</s
 
 <p>There are many plotting utilities available for Python. Some notable examples include <a href="http://bokeh.pydata.org/en/latest">Bokeh</a> for interactive plotting, <a href="http://seaborn.pydata.org">Seaborn</a> and <a href="https://altair-viz.github.io">Altair</a> for statistical visualization, and a Python port of the popular R programming language plotting utility <a href="https://github.com/yhat/ggplot">ggplot</a>. While interactive plotting is likely the visualization tool of the future, the most common (and full featured) plotting utility for Python as of this writing is <a href="http://matplotlib.org">matplotlib</a>. It was designed with the plotting syntax and style of MATLAB in mind and many of the commands are similiar. As is the case with numpy, matplotlib is not within the standard libray of Python and must be imported.</p>
 
+<div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> input </code>
+
+    </div>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Load the plotting utility matplotlib with an alias plt.
 </span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="n">plt</span>
 
@@ -715,12 +1015,24 @@ Since we added the automatic printing of values as a <strong>keyword argument</s
 
 <p>We would like to see if our simulated cells appear to grow exponentially with time. To do so, we would like to plot the number of cells we have at division number $d$ as a function of $d$. Before we do any plotting, let’s generate a vector of division times that matches the size of our <code class="highlighter-rouge">N_d</code> vector. We can do this using some of the arrangement methods that we used earlier with numpy. Since we had measure at $d=0$, our new division vector must have a length of <code class="highlighter-rouge">number_of_divisions</code> + 1.</p>
 
+<div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> input </code>
+
+    </div>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Establish a vector of the division cycles
 </span><span class="n">division_vector</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">number_of_divisions</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
 </code></pre></div></div>
 
 <p>Now all that is left is to plot it! We can use the <code class="highlighter-rouge">plot</code> function of matplotlib to generate our scatterplot. We’ll choose small circles as our markers and provide the approriate $x$ and $y$ labels as we always should. We’ll also add a legend to our plot to show that these data poitns are from a simulation.</p>
 
+<div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> input </code>
+
+    </div>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Generate the plot.
 </span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">division_vector</span><span class="p">,</span> <span class="n">N_d</span><span class="p">,</span> <span class="s">'o'</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s">'simulation'</span><span class="p">)</span>
 
@@ -732,6 +1044,13 @@ Since we added the automatic printing of values as a <strong>keyword argument</s
 </span><span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
 </code></pre></div></div>
 
+<div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> output </code>
+
+    </div>
+
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;matplotlib.legend.Legend at 0x1174df610&gt;
 </code></pre></div></div>
 
@@ -741,12 +1060,24 @@ Since we added the automatic printing of values as a <strong>keyword argument</s
 
 <p>To me, this plot is pretty ugly. Every aspect of this plot can be stylized to your liking, althought it will take a little bit of work. However, we can import the <code class="highlighter-rouge">seaborn</code> plotting utility which will stylize all of our plots and make them much clearer to interpret.</p>
 
+<div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> input </code>
+
+    </div>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="n">sns</span>
 <span class="n">sns</span><span class="o">.</span><span class="nb">set</span><span class="p">()</span>
 </code></pre></div></div>
 
 <p>With this imported, let’s go ahead and remake the plot from above. We’ll also save it using the <code class="highlighter-rouge">plt.savefig</code> function. With this, you’ll be able to insert your plots into the PDF assignments you will turn in.</p>
 
+<div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> input </code>
+
+    </div>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Generate the plot.
 </span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">division_vector</span><span class="p">,</span> <span class="n">N_d</span><span class="p">,</span> <span class="s">'o'</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s">'simulation'</span><span class="p">)</span>
 
@@ -759,6 +1090,13 @@ Since we added the automatic printing of values as a <strong>keyword argument</s
 <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s">'growth_simulation.pdf'</span><span class="p">)</span>
 </code></pre></div></div>
 
+<div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> output </code>
+
+    </div>
+
 <p><img src="t0c_python_syntax_and_plotting_files/t0c_python_syntax_and_plotting_84_0.png" alt="png" /></p>
 
 <p>That’s much better!</p>
@@ -769,8 +1107,21 @@ Since we added the automatic printing of values as a <strong>keyword argument</s
 
 <p>When you are typing away in the notebook or in an iPython terminal, you can pull up the documentation information for any function or attribute by typing the name followed by a question mark (<code class="highlighter-rouge">?</code>). For example (assuming you have <code class="highlighter-rouge">numpy</code> imported as <code class="highlighter-rouge">np</code>, you can get the documentation for the <code class="highlighter-rouge">np.random</code> module by typing the following.</p>
 
+<div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> input </code>
+
+    </div>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="err">?</span>
 </code></pre></div></div>
+
+<div style="background-color: #faf9f9; width: 100%;
+               color: #a6adb5; height:15pt; margin: 0px; padding:0px;text-align: center;">
+
+    <code style="font-size: 9pt; padding-bottom: 10px;"> output </code>
+
+    </div>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[0;31mType:[0m        module
 [0;31mString form:[0m &lt;module 'numpy.random' from '/Users/gchure/anaconda3/lib/python3.7/site-packages/numpy/random/__init__.py'&gt;
