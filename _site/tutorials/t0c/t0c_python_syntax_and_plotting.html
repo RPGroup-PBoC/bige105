@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109526846-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', );
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [['$','$'], ['\\(','\\)']],
+      processEscapes: true
+    }
+  });
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+	<meta charset="utf-8">
+	<title>BiGe105</title>
+
+  <!-- Edit site and author settings in `_config.yml` to make the social details your own -->
+
+    <meta content="BiGe105" property="og:site_name">
+  
+    <meta content="BiGe105" property="og:title">
+  
+  
+    <meta content="website" property="og:type">
+  
+  
+    <meta content="Evolution" property="og:description">
+  
+  
+    <meta content="http://localhost:4000/tutorials/t0c/t0c_python_syntax_and_plotting" property="og:url">
+  
+  
+  
+    <meta content="http://localhost:4000/assets/img/logo.png" property="og:image">
+  
+  
+  
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@">
+    <meta name="twitter:creator" content="@">
+  
+    <meta name="twitter:title" content="BiGe105">
+  
+  
+    <meta name="twitter:url" content="http://localhost:4000/tutorials/t0c/t0c_python_syntax_and_plotting">
+  
+  
+    <meta name="twitter:description" content="Evolution">
+  
+  
+    <meta name="twitter:image:src" content="http://localhost:4000/assets/img/logo.png">
+  
+
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta property="og:image" content="">
+	<link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="/assets/img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicon/apple-touch-icon-144x144.png">
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#263959">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#263959">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#263959">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="/assets/fonts/font-awesome/css/font-awesome.min.css">
+	<!-- Styles -->
+	<link rel="stylesheet" href="/assets/css/main.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <aside class="sidebar">
+  <header>
+    <div class="about">
+      <div class="cover-author-image">
+        <a href="/"><img style="max-width:60%; height:auto;" src="/assets/img/logo.png" alt=""></a>
+      </div>
+      <div class="author-name"></div>
+      <div class="sidebar-links">
+      <hr>
+      
+       <p><a href="http://localhost:4000/index.html">About</a></p>
+      <hr>
+      
+      
+       <p><a href="http://localhost:4000/people">People</a></p>
+      <hr>
+      
+      
+       <p><a href="http://localhost:4000/code">Computational Explorations</a></p>
+      <hr>
+      
+      
+       <p><a href="http://localhost:4000/homework">Homework</a></p>
+      <hr>
+      
+      
+       <p><a href="http://localhost:4000/readings">Readings</a></p>
+      <hr>
+      
+      
+       <p><a href="http://localhost:4000/lab">Laboratory Experiments</a></p>
+      <hr>
+      
+      
+       <p><a href="http://localhost:4000/syllabus">Syllabus</a></p>
+      <hr>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      </div>
+    </div>
+  </header> <!-- End Header -->
+
+  <footer>
+    <section class="contact">
+      <h3 class="contact-title">Contact</h3>
+      <ul>
+        
+        
+          <li class="github"><a href="http://github.com/RPGroup-PBoC" target="_blank"><i class="fa fa-github"></i></a></li>
+        
+        
+      </ul> 
+    </section> 
+    <div class="copyright">
+      <p>2019 &copy; 
+    </div>
+    <center>
+    </center>
+  </footer> 
+</aside> 
+<div class="content-box clearfix">
+  <article class="article-page">
+  <div class="page-content">
+    
+    
+    <div class="wrap-content">
+      <header class="header-page">
+        <h1 class="page-title"></h1>
+      </header>
+      <h1 id="an-introduction-to-python-syntax-and-plotting">An introduction to Python syntax and plotting</h1>
+
+<p>© 2020 Griffin Chure. This work is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution License CC-BY 4.0</a>. All code contained herein is licensed under an <a href="https://opensource.org/licenses/MIT">MIT license</a></p>
+
+<hr />
+
+<p>In this tutorial, we will learn some of the basics of programming in Python. While this will all become muscle memory, it’s useful to keep this as a reference. To follow along with this tutorial, launch a Jupyter notebook <a href="t0b_jupyter_notebooks.html">as described in tutorial 0b</a> and type along as we go into the code cells.</p>
+
+<h2 id="basic-shell-commands">Basic shell commands</h2>
+
+<p>In <a href="http://rpgroup.caltech.edu/bige105/tutorials/t0a/t0a_setting_up_python.html">Tutorial 0a</a> and <a href="http://rpgroup.caltech.edu/bige105/tutorials/t0b/t0b_jupyter_notebooks.html">tutorial 0b</a>, you learned how to launch an IPython interpreter from a terminal. Having knowledge of some basic UNIX command line skills, such as moving between directories, listing files in a given directory, and making new directories, is imperative to becoming a computational scientist. Please see <a href="http://justinbois.github.io/bootcamp/2019/lessons/l02_basic_command_line_skills.html">this wonderful tutorial by Justin Bois</a> for a primer on using the command line. Briefly, you will only need to know three commands.</p>
+
+<ol>
+  <li>
+    <p><code class="highlighter-rouge">cd</code> - “Change directories”. By typing this command, you will be able to move from where you currently are to another folder. You can do this by specifically typing a path, such as <code class="highlighter-rouge">cd /Users/gchure/bige105</code>. You can also move <em>relative</em> to where you currently are by using some shorthand notation. Typing <code class="highlighter-rouge">cd ../</code> will move you <strong>up</strong> one directory, <code class="highlighter-rouge">cd ../../</code> will move you up two directories, and <code class="highlighter-rouge">cd ~/</code> will move you to your home directory.</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">ls</code> - “List files and directories”. Typing this command in your terminal will list all files and directories in your current working directory.</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">mkdir</code> - “Make directory”. This is useful for making new directories on your computer without having to open Finder or Windows Explorer. For example, I can make a <code class="highlighter-rouge">data</code> folder in my <code class="highlighter-rouge">BiGe105</code> root directory by typing <code class="highlighter-rouge">mkdir data</code>. I could make another folder called <code class="highlighter-rouge">good_data</code> two directories up from my current folder by typing <code class="highlighter-rouge">mkdir ../../data</code>.</p>
+  </li>
+</ol>
+
+<p>With these three commands memorized, you should be able to navigate around your computer without leaving the terminal.</p>
+
+<h2 id="hello-world"><code class="highlighter-rouge">Hello, world</code></h2>
+
+<p>As is typical when learning any programming language, we’ll start by making our computer speak to us. We’ll do this by using one of the <a href="https://docs.python.org/3/library/functions.html">many standard functions in Python</a>, the <code class="highlighter-rouge">print</code> function.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">print</span><span class="p">(</span><span class="s">'Hello, world'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Hello, world
+</code></pre></div></div>
+
+<p>In the above code, we called the <code class="highlighter-rouge">print</code> function and passed the text <code class="highlighter-rouge">Hello, world.</code> surrounded by single quotation marks <code class="highlighter-rouge">''</code>. The text was passed as an <strong>argument</strong> to the <code class="highlighter-rouge">print</code> <strong>function</strong> by placing it in the parentheses. The quotation marks determined the <strong>type</strong> of the argument to be text, known as a <strong>string</strong>. While we used single quotations in the above code, we could also use double quotations <code class="highlighter-rouge">""</code>. These are exchangeable in Python.</p>
+
+<p>While our <code class="highlighter-rouge">'Hello, world.'</code> is a string, this function can also be used to print other types such as integers (<strong><code class="highlighter-rouge">int</code></strong>), decimals (<strong><code class="highlighter-rouge">float</code></strong>), and <code class="highlighter-rouge">True/False</code> (<strong><code class="highlighter-rouge">bool</code></strong>) by passing them as arguments to the <code class="highlighter-rouge">print</code> function.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">print</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="mf">3.14159</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="bp">True</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>10
+3.14159
+True
+</code></pre></div></div>
+
+<p>In the above code, it would be nice to be able to add a <strong>comment</strong> about what the type of each variable is that we are printing, but we don’t want this comment to be interpreted by Python. By adding a pound symbol (<code class="highlighter-rouge">#</code>) before a line of code, we can force Python to ignore it.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Print an integer
+</span><span class="k">print</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+
+<span class="c1"># Print a float
+</span><span class="k">print</span><span class="p">(</span><span class="mf">3.14159</span><span class="p">)</span>
+
+<span class="c1"># Print a bool
+</span><span class="k">print</span><span class="p">(</span><span class="bp">True</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>10
+3.14159
+True
+</code></pre></div></div>
+
+<p>We see that we get the same result.</p>
+
+<h2 id="basic-math">Basic math</h2>
+
+<h3 id="arithmetic">Arithmetic</h3>
+
+<p>The crux of scientific programming is the ability to perform mathematical operations. Python can do a variety of simple mathematical functions by default.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">print</span><span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="c1"># this should be 2
+</span><span class="k">print</span><span class="p">(</span><span class="mi">4</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span> <span class="c1"># this should be 2
+</span><span class="k">print</span><span class="p">(</span><span class="mi">40</span> <span class="o">-</span> <span class="mi">38</span><span class="p">)</span> <span class="c1"># this should be 2
+</span><span class="k">print</span><span class="p">(</span><span class="mi">2</span><span class="o">^</span><span class="mi">4</span><span class="p">)</span> <span class="c1"># this should be 16
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>2
+2.0
+2
+6
+</code></pre></div></div>
+
+<p>Everything looks good, but what happened at the end? In Python, you exponentiate terms using a double asterisk (<code class="highlighter-rouge">**</code>) and <strong>not</strong> a carrot (<code class="highlighter-rouge">^</code>). The carrot executes a bitwise operation which is completely different than exponentiation.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">print</span><span class="p">(</span><span class="mi">2</span><span class="o">**</span><span class="mi">4</span><span class="p">)</span> <span class="c1"># this should be 16
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>16
+</code></pre></div></div>
+
+<p>Note that the all mathematical operations other than addition (<code class="highlighter-rouge">+</code>) can only be done on ints, floats, or bool. The addition operator can be performed on strings too! Let’s say we want to stitch together two components of a sequence together.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">print</span><span class="p">(</span><span class="s">'AATAGGCGATAG'</span> <span class="o">+</span> <span class="s">'tttgaggcgggggc'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>AATAGGCGATAGtttgaggcgggggc
+</code></pre></div></div>
+
+<p>While all of these operations are simple, we would like some way in which can store a number for further use. We can do this by assigning the output of an operation to a <strong>variable</strong>.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Assign our sequences to variables.
+</span><span class="n">seq_1</span> <span class="o">=</span> <span class="s">'AATAGGCGATAG'</span>
+<span class="n">seq_2</span> <span class="o">=</span> <span class="s">'tttgaggcgggggc'</span>
+<span class="n">stitched_seq</span> <span class="o">=</span> <span class="n">seq_1</span> <span class="o">+</span> <span class="n">seq_2</span>
+<span class="k">print</span><span class="p">(</span><span class="n">stitched_seq</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>AATAGGCGATAGtttgaggcgggggc
+</code></pre></div></div>
+
+<p>We can call <strong>methods</strong> on some data types in Python. For example, we can convert our stiteched string into all upper or lower case using the <code class="highlighter-rouge">upper()</code> or <code class="highlighter-rouge">lower()</code> method.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Convert the stitched sequences to all upper and all lower case.
+</span><span class="n">upper_seq</span> <span class="o">=</span> <span class="n">stitched_seq</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+<span class="n">lower_seq</span> <span class="o">=</span> <span class="n">stitched_seq</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+<span class="k">print</span><span class="p">(</span><span class="n">upper_seq</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">lower_seq</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>AATAGGCGATAGTTTGAGGCGGGGGC
+aataggcgatagtttgaggcgggggc
+</code></pre></div></div>
+
+<p>We can also count the occurrences of a given character in a string by using the <code class="highlighter-rouge">count()</code> method.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Count the number of the different bases in the stitched DNA sequence.
+</span><span class="n">num_A</span> <span class="o">=</span> <span class="n">upper_seq</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s">'A'</span><span class="p">)</span>
+<span class="n">num_T</span> <span class="o">=</span> <span class="n">upper_seq</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s">'T'</span><span class="p">)</span>
+<span class="n">num_C</span> <span class="o">=</span> <span class="n">upper_seq</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s">'C'</span><span class="p">)</span>
+<span class="n">num_G</span> <span class="o">=</span> <span class="n">upper_seq</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s">'G'</span><span class="p">)</span>
+
+<span class="c1"># Print them to the screen for good measure.
+</span><span class="k">print</span><span class="p">(</span><span class="n">num_A</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">num_T</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">num_C</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">num_G</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>6
+5
+3
+12
+</code></pre></div></div>
+
+<h3 id="lists-and-tuples">Lists and tuples</h3>
+
+<p>So far, we’ve learned about floats, ints, bools, and strings as well as how to assign them to variables. But what about when we want to work with a series of these kinds of values? There are a few ways in which we can do this $-$ <strong>lists</strong> (values within brackets <code class="highlighter-rouge">[]</code>), <strong>tuples</strong> (values within parenthesis <code class="highlighter-rouge">()</code>), and <strong>arrays</strong> (which we’ll learn about in the next section).</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Generate some lists and arrays.
+</span><span class="n">example_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="n">example_tuple</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="n">list_of_lists</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]]</span>
+<span class="n">tuple_of_lists</span> <span class="o">=</span> <span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">200</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">mixed_type_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s">'biology'</span><span class="p">,</span> <span class="s">'geology'</span><span class="p">,</span> <span class="mf">10.028</span><span class="p">]</span>
+</code></pre></div></div>
+
+<p>Note that lists and arrays can have mixed types. Once we have a list or a tuple, we can extract a single value or a range of values by <strong>indexing</strong>.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Index some values.
+</span><span class="k">print</span><span class="p">(</span><span class="n">example_list</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>  <span class="c1"># should be 1
+</span><span class="k">print</span><span class="p">(</span><span class="n">example_tuple</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>  <span class="c1"># should be 3
+</span><span class="k">print</span><span class="p">(</span><span class="n">example_list</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">])</span> <span class="c1"># should be 1 and 2
+</span><span class="k">print</span><span class="p">(</span><span class="n">example_list</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>  <span class="c1"># This will give the last entry of the list 
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1
+3
+[1, 2]
+3
+</code></pre></div></div>
+
+<p>To get the first value of the list, I started with zero. <strong>In Python, indexing begins at <code class="highlighter-rouge">0</code>.</strong> This is different than in other programming languages such as MATLAB which begins at <code class="highlighter-rouge">1</code>.</p>
+
+<p>So what exactly is the difference between tuples and lists? <strong>Lists are mutable. Tuples are not</strong>. This means once a value in a tuple is set in place, it can’t be changed without redefining the tuple. Let’s demonstrate this by trying to change the first value of our <code class="highlighter-rouge">example_list</code> and <code class="highlighter-rouge">example_tuple</code>.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Change the first entry to 1000 
+</span><span class="n">example_list</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1000</span>
+<span class="k">print</span><span class="p">(</span><span class="n">example_list</span><span class="p">)</span>
+<span class="n">example_tuple</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1000</span>
+<span class="k">print</span><span class="p">(</span><span class="n">example_tuple</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[1000, 2, 3]
+
+
+
+---------------------------------------------------------------------------
+
+TypeError                                 Traceback (most recent call last)
+
+&lt;ipython-input-15-a399fb3f8313&gt; in &lt;module&gt;
+      2 example_list[0] = 1000
+      3 print(example_list)
+----&gt; 4 example_tuple[0] = 1000
+      5 print(example_tuple)
+
+
+TypeError: 'tuple' object does not support item assignment
+</code></pre></div></div>
+
+<p>Python yelled at me and told me that I can’t assign a current value in a tuple. This is a very important point. For example, if you want to have some process output a series of values you don’t want to change, put them in a tuple. Otherwise, put them in a list or an array.</p>
+
+<p>Lists <strong>are</strong> mutable, but we have to be careful with performing arithmetic operations on them. For example, the operators <code class="highlighter-rouge">+</code>,<code class="highlighter-rouge">-</code>, <code class="highlighter-rouge">**</code>, and <code class="highlighter-rouge">/</code> will give you errors. However, the <code class="highlighter-rouge">*</code> operator will concatenate a list with itself.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Do list arithmetic.
+</span><span class="n">next_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">]</span>
+<span class="k">print</span><span class="p">(</span><span class="n">next_list</span> <span class="o">*</span> <span class="mi">2</span><span class="p">)</span>  <span class="c1"># Should be [2, 4, 6, 2, 4, 6]
+</span><span class="k">print</span><span class="p">(</span><span class="n">next_list</span> <span class="o">*</span> <span class="mi">5</span><span class="p">)</span>  <span class="c1"># Should be the same list repeated five times.
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[2, 4, 6, 2, 4, 6]
+[2, 4, 6, 2, 4, 6, 2, 4, 6, 2, 4, 6, 2, 4, 6]
+</code></pre></div></div>
+
+<p>So how do we do more complicated mathematical operations on a series of numbers? How can I multiply each element of an array by five? How do I take the exponential of each element? How do I perform a dot product between two series? To perform such tasks, we will have to import another python module, <a href="http://www.numpy.org">NumPy</a>.</p>
+
+<h2 id="importing-modules-and-working-with-numpy">Importing modules and working with NumPy</h2>
+
+<p>When you open a Python interpreter or run a script, you are only loading the ‘standard’ Python packages. This means that you are not loading everything you could possibly want, but only the packages you need to perform the task. To perform more elaborate computation in Python, we will need to import an external <strong>module</strong> called NumPy.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Import the NumPy module and give it an alias
+</span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+</code></pre></div></div>
+
+<p>Whenever you write a Python script, you should always import the modules you will need at the very beginning. That way, all of the required packages will be loaded and ready to go when you start loading them.</p>
+
+<p>Let’s talk about the syntax of the above line. I told the Python interpreter that it should <strong>import</strong> the module called <code class="highlighter-rouge">numpy</code> and give it the <strong>alias</strong> of <code class="highlighter-rouge">np</code>. This means whenever I have to call a  Numpy associated function, I can do so by typing <code class="highlighter-rouge">np.function_name</code> instead of <code class="highlighter-rouge">numpy.function_name</code>. The alias can be whatever you would like it to be, but you should stick by the community standards so your code is clear to everyone who is trying to figure out what you are doing.</p>
+
+<p>Numpy is the premier numerical computing module for Python. With it, we have myriad functions for peforming numerical operations.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Demonstrate the power of numpy.
+</span><span class="k">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+<span class="k">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
+<span class="k">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="mi">5</span><span class="p">)))</span>
+<span class="k">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">))</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>0.36787944117144233
+0.8414709848078965
+-0.3401272599624713
+-2.4492935982947064e-16
+</code></pre></div></div>
+
+<p>With numpy comes a new data type called <strong>numpy arrays</strong>. These are series of values which are mutable (just like lists) which cannot have a mixed data type (unlike lists and tuples).  We can also perform mathematical operations on arrays.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Demonstrate the magic of numpy arrays
+</span><span class="n">my_array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+
+<span class="c1">#Basic arithmetic
+</span><span class="k">print</span><span class="p">(</span><span class="n">my_array</span> <span class="o">*</span> <span class="mi">2</span><span class="p">)</span>  <span class="c1"># Element-wise multiplication
+</span><span class="k">print</span><span class="p">(</span><span class="n">my_array</span> <span class="o">/</span> <span class="mi">3</span><span class="p">)</span>  <span class="c1"># Element-wise division
+</span><span class="k">print</span><span class="p">(</span><span class="n">my_array</span> <span class="o">*</span> <span class="n">my_array</span><span class="p">)</span>  <span class="c1"># Element-wise multiplication
+</span><span class="k">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">my_array</span><span class="p">,</span> <span class="n">my_array</span><span class="p">))</span> <span class="c1"># Dot product of two arrays
+</span></code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[2 4 6]
+[0.33333333 0.66666667 1.        ]
+[1 4 9]
+14
+</code></pre></div></div>
+
+<p>Numpy arrays are not limited to being one-dimensional. We can create n-dimensional numpy arrays with ease.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Create multi-dimensional arrays
+</span><span class="n">one_dimensional_array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">])</span>
+<span class="n">two_dimensional_array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">],</span>
+                                  <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">]])</span>  
+
+<span class="k">print</span><span class="p">(</span><span class="n">one_dimensional_array</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">two_dimensional_array</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[1 2 3 4]
+[[1 2 3 4]
+ [5 6 7 8]]
+</code></pre></div></div>
+
+<p>We can even make numpy make series of values for us! This will be very useful once we start manipulating images and making plots.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Automatically generate series of values.
+</span><span class="n">linear_spaced</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>  <span class="c1"># Generates 1000 points between 0 and 10 
+</span><span class="n">log_spaced</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">logspace</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">200</span><span class="p">)</span> <span class="c1"># Generates 200 points logarithmically spaced 
+</span>                                     <span class="c1"># between .1 and 10
+</span><span class="n">aranged</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>  <span class="c1"># Generates values between 0 and 50 taking steps of 
+</span>                               <span class="c1"># two.
+</span></code></pre></div></div>
+
+<p>It is impossible to perform scientific computing in Python without using numpy.</p>
+
+<h2 id="checking-type-length-and-shape">Checking type, length, and shape</h2>
+
+<p>It’s useful to be able to see some properties of variables we assign. Let’s look back at the sequence strings we made earlier and extract some of their properties.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Generate some variable with different types.
+</span><span class="n">string_type</span> <span class="o">=</span> <span class="s">'AATGATTCG'</span>
+<span class="n">float_type</span> <span class="o">=</span> <span class="mf">3.14159</span>
+<span class="n">bool_type</span> <span class="o">=</span> <span class="bp">True</span>
+<span class="n">int_type</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">list_type</span> <span class="o">=</span> <span class="p">[</span><span class="s">'Escherichia coli'</span><span class="p">,</span> <span class="s">'Salmonella enterica'</span><span class="p">,</span> <span class="mi">10</span><span class="p">]</span>
+<span class="n">tuple_type</span> <span class="o">=</span> <span class="p">(</span><span class="s">'Geospiza fortis'</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="n">nparray_type</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ones_like</span><span class="p">(</span><span class="n">tuple_type</span><span class="p">)</span>
+
+<span class="c1"># Print their types
+</span><span class="k">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">string_type</span><span class="p">))</span>
+<span class="k">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">float_type</span><span class="p">))</span>
+<span class="k">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">bool_type</span><span class="p">))</span>
+<span class="k">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">int_type</span><span class="p">))</span>
+<span class="k">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">list_type</span><span class="p">))</span>
+<span class="k">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">tuple_type</span><span class="p">))</span>
+<span class="k">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">nparray_type</span><span class="p">))</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;class 'str'&gt;
+&lt;class 'float'&gt;
+&lt;class 'bool'&gt;
+&lt;class 'int'&gt;
+&lt;class 'list'&gt;
+&lt;class 'tuple'&gt;
+&lt;class 'numpy.ndarray'&gt;
+</code></pre></div></div>
+
+<p>Note that even though the elements of our <code class="highlighter-rouge">list_type</code> and <code class="highlighter-rouge">tuple_type</code> have mixed types, this command tells us what the type of the <em>object</em> is (i.e. <code class="highlighter-rouge">list</code> and <code class="highlighter-rouge">tuple</code>). We can force changes in the type of a variable with ease. To demonstrate, let’s break up our stitched sequence into the individual basepairs.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Change the type of a varible
+</span><span class="n">basepairs</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">stitched_seq</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">basepairs</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>['A', 'A', 'T', 'A', 'G', 'G', 'C', 'G', 'A', 'T', 'A', 'G', 't', 't', 't', 'g', 'a', 'g', 'g', 'c', 'g', 'g', 'g', 'g', 'g', 'c']
+</code></pre></div></div>
+
+<p>We can  also convert numbers to strings. This is useful if we want to print a sentence including the output from some other operation. Let’s check the length of our two DNA sequences and print it in a sentence.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Determine the lengths of the two sequences.
+</span><span class="n">seq_1_len</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">seq_1</span><span class="p">)</span> 
+<span class="n">seq_2_len</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">seq_2</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s">"The length of our sequence is "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">seq_1_len</span> <span class="o">+</span> <span class="n">seq_2_len</span><span class="p">)</span> <span class="o">+</span> <span class="s">' bases'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>The length of our sequence is 26 bases
+</code></pre></div></div>
+
+<p>We’ve created <em>a lot</em> of variable so far in this tutorial. It’s nice to be able to look at what variables exist in our environment as well as get some information. Let’s take a look at everything we’ve made so far.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">whos</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Variable                Type       Data/Info
+--------------------------------------------
+aranged                 ndarray    25: 25 elems, type `int64`, 200 bytes
+basepairs               list       n=26
+bool_type               bool       True
+example_list            list       n=3
+example_tuple           tuple      n=3
+float_type              float      3.14159
+int_type                int        3
+linear_spaced           ndarray    1000: 1000 elems, type `float64`, 8000 bytes
+list_of_lists           list       n=1
+list_type               list       n=3
+log_spaced              ndarray    200: 200 elems, type `float64`, 1600 bytes
+lower_seq               str        aataggcgatagtttgaggcgggggc
+mixed_type_list         list       n=5
+my_array                ndarray    3: 3 elems, type `int64`, 24 bytes
+next_list               list       n=3
+np                      module     &lt;module 'numpy' from '/Us&lt;...&gt;kages/numpy/__init__.py'&gt;
+nparray_type            ndarray    2: 2 elems, type `&lt;U15`, 120 bytes
+num_A                   int        6
+num_C                   int        3
+num_G                   int        12
+num_T                   int        5
+one_dimensional_array   ndarray    4: 4 elems, type `int64`, 32 bytes
+seq_1                   str        AATAGGCGATAG
+seq_1_len               int        12
+seq_2                   str        tttgaggcgggggc
+seq_2_len               int        14
+stitched_seq            str        AATAGGCGATAGtttgaggcgggggc
+string_type             str        AATGATTCG
+tuple_of_lists          tuple      n=3
+tuple_type              tuple      n=2
+two_dimensional_array   ndarray    2x4: 8 elems, type `int64`, 64 bytes
+upper_seq               str        AATAGGCGATAGTTTGAGGCGGGGGC
+</code></pre></div></div>
+
+<p>We see that we get a relatively nicely ordered list of all of our variables, the type of the variable, and then information about their contents. We can see for our lists and arrays it tells us the number of rows and columns, how many elements there are, what the type of those elements are and so forth.</p>
+
+<h2 id="functions">Functions</h2>
+
+<p>Functions are arguably the most important components of efficient and effective programming. Functions are sections of code that are written to take an argument, perform some manipulation, and return the manipulated argument. In Python, these functions can be written in the same script where you want to use them.</p>
+
+<p>In Python, spacing and indentation matters. When we define a function and perform looping, we have to be very aware of where our code exists in the script. Once you define a function, all operations that are to take place in that function should be indented from the rest of the code.</p>
+
+<p>The best way to learn is by doing. Let’s write a function to add two DNA sequences together and determine its <a href="">GC content</a>, the percentage of the DNA that is either guanine or cytosine.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">compute_gc</span><span class="p">(</span><span class="n">seq_a</span><span class="p">,</span> <span class="n">seq_b</span><span class="p">,</span> <span class="n">print_seq</span><span class="o">=</span><span class="bp">True</span><span class="p">):</span>
+    <span class="s">"""
+    Stitches together two DNA sequences (seq_a and seq_b) into a single sequence
+    then computes the GC content. This is defined as the number of G's and C's in
+    the sequence divided by the total sequence length.
+    """</span>
+    
+    <span class="c1"># Merge the sequences together.
+</span>    <span class="n">merged_sequence</span> <span class="o">=</span> <span class="n">seq_a</span> <span class="o">+</span> <span class="n">seq_b</span>
+    
+    <span class="c1"># Determine if the new string should be printed. 
+</span>    <span class="k">if</span> <span class="n">print_seq</span> <span class="o">==</span> <span class="bp">True</span><span class="p">:</span>
+        <span class="k">print</span><span class="p">(</span><span class="n">merged_sequence</span><span class="p">)</span>
+        
+    <span class="c1"># Make the merged string all upper-case.
+</span>    <span class="n">merged_upper</span> <span class="o">=</span> <span class="n">merged_sequence</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+    
+    <span class="c1"># Count the number of G's and C's.
+</span>    <span class="n">num_G</span> <span class="o">=</span> <span class="n">merged_upper</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s">'G'</span><span class="p">)</span>
+    <span class="n">num_C</span> <span class="o">=</span> <span class="n">merged_upper</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s">'C'</span><span class="p">)</span>
+    
+    <span class="c1"># Compute the length of the sequence and the GC content.
+</span>    <span class="n">seq_len</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">merged_upper</span><span class="p">)</span>
+    <span class="n">gc_content</span> <span class="o">=</span> <span class="p">(</span><span class="n">num_G</span> <span class="o">+</span> <span class="n">num_C</span><span class="p">)</span> <span class="o">/</span> <span class="n">seq_len</span>
+    
+    <span class="c1"># Return the gc_content
+</span>    <span class="k">return</span> <span class="n">gc_content</span>
+</code></pre></div></div>
+
+<p>We did a lot of complicated procedures in this code, so let’s go through it piece by piece.</p>
+
+<ol>
+  <li>We <strong>def</strong>ined the function as <code class="highlighter-rouge">compute_gc</code> which takes the arguments <code class="highlighter-rouge">seq_a</code> and <code class="highlighter-rouge">seq_b</code> as well as a keyword argument <code class="highlighter-rouge">print_sequence</code> which has a default value of <code class="highlighter-rouge">True</code>.</li>
+  <li>We wrote some information about the what the function does and what arguments it takes. The tripple quoation marks (<code class="highlighter-rouge">"""</code>) allows us to write strings that go over multiple lines in the code cell.</li>
+  <li>We then performed the operation by adding together <code class="highlighter-rouge">seq_a</code> and <code class="highlighter-rouge">seq_b</code> and assigning it to a new variable called <code class="highlighter-rouge">merged_sequence</code>.</li>
+  <li>We tested if the function should print the resut to the screen. We did this by using an <code class="highlighter-rouge">if</code> statement. This tested <strong><code class="highlighter-rouge">if</code></strong> <code class="highlighter-rouge">print_seq</code> was equal to <code class="highlighter-rouge">True</code>. If it that was the case, the <code class="highlighter-rouge">print</code> function was called and printed the value of <code class="highlighter-rouge">merged_sequence</code>.</li>
+  <li>The GC content is computed and the function is told to <strong><code class="highlighter-rouge">return</code></strong> the value.</li>
+</ol>
+
+<p>Each line in this function was one-tab away from the definition statement of the function. Note that we were never specific about <em>what</em> the value of <code class="highlighter-rouge">seq_a</code> and what <code class="highlighter-rouge">seq_b</code> are.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Add some various values together.
+</span><span class="n">all_A</span> <span class="o">=</span> <span class="s">'aaaa'</span>
+<span class="n">all_T</span> <span class="o">=</span> <span class="s">'Tttt'</span>
+<span class="n">all_C</span> <span class="o">=</span> <span class="s">'CcCC'</span>
+<span class="n">all_G</span> <span class="o">=</span> <span class="s">'GgGg'</span>
+<span class="n">AT_only</span> <span class="o">=</span> <span class="n">compute_gc</span><span class="p">(</span><span class="n">all_A</span><span class="p">,</span> <span class="n">all_T</span><span class="p">)</span> 
+<span class="n">GC_only</span> <span class="o">=</span> <span class="n">compute_gc</span><span class="p">(</span><span class="n">all_G</span><span class="p">,</span> <span class="n">all_C</span><span class="p">)</span>
+<span class="n">AC_only</span> <span class="o">=</span> <span class="n">compute_gc</span><span class="p">(</span><span class="n">all_A</span><span class="p">,</span> <span class="n">all_C</span><span class="p">)</span>  
+<span class="c1"># Print the variables we assigned them to.
+</span><span class="k">print</span><span class="p">(</span><span class="n">AT_only</span><span class="p">,</span> <span class="n">GC_only</span><span class="p">,</span> <span class="n">AC_only</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>aaaaTttt
+GgGgCcCC
+aaaaCcCC
+0.0 1.0 0.5
+</code></pre></div></div>
+
+<p>We should be pleased to see that <code class="highlighter-rouge">AT_only</code> has a GC content of 0, <code class="highlighter-rouge">GC_only</code> has a GC content of 1.0, and <code class="highlighter-rouge">AC_only</code> has a value of 0.5, as we predicted.
+Since we added the automatic printing of values as a <strong>keyword argument</strong>, we can easily tell our function to stop printing things.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">AT_only</span> <span class="o">=</span> <span class="n">compute_gc</span><span class="p">(</span><span class="n">all_A</span><span class="p">,</span> <span class="n">all_T</span><span class="p">,</span> <span class="n">print_seq</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span> 
+<span class="n">GC_only</span> <span class="o">=</span> <span class="n">compute_gc</span><span class="p">(</span><span class="n">all_G</span><span class="p">,</span> <span class="n">all_C</span><span class="p">,</span> <span class="n">print_seq</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+<span class="n">AC_only</span> <span class="o">=</span> <span class="n">compute_gc</span><span class="p">(</span><span class="n">all_A</span><span class="p">,</span> <span class="n">all_C</span><span class="p">,</span> <span class="n">print_seq</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>  
+<span class="c1"># Print the variables we assigned them to.
+</span><span class="k">print</span><span class="p">(</span><span class="n">AT_only</span><span class="p">,</span> <span class="n">GC_only</span><span class="p">,</span> <span class="n">AC_only</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>0.0 1.0 0.5
+</code></pre></div></div>
+
+<p>Being able to write functions to automate tasks will be very valuable in the future $-$ especially when we start working with images.</p>
+
+<h2 id="our-first-for-loop">Our first <code class="highlighter-rouge">for</code> loop</h2>
+
+<p>Rather than using “boring” simple operations to learn some syntax, let’s learn about the <code class="highlighter-rouge">for</code> loop by using a biological example.</p>
+
+<p>Let’s say that we have a cell sitting in a tube of growth medium. If we place this tube at the right temperature, the cells will grow exponentially. We can write down a very simple model that as long as the cells are well below the carrying capacity of their environment, they will grow as 
+<script type="math/tex">N(d) = 2^{d},</script></p>
+
+<p>where $N(d)$ is the number of cells at division $d$. To test this model, we’ll write a very short simulation to test that the a cell would grow exponentially.</p>
+
+<p>Before we think of how the specific code should be written, let’s write out what our thought process should be.</p>
+
+<ol>
+  <li>We should first define the initial number of cells as well as the number of divisions to simulate.</li>
+  <li>For each cell division, we should multiply the number of cells that we had in the last division event.</li>
+  <li>After each division, we should keep track of how many cells there are.</li>
+</ol>
+
+<p>With this idea in place, let’s go through the code.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Set the initial number of cells in the experiment.
+</span><span class="n">number_of_cells</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="c1"># Set the number of division cycles for the experiment.
+</span><span class="n">number_of_divisions</span> <span class="o">=</span> <span class="mi">10</span>
+
+<span class="c1"># Set a list of number of cells at division d and start with 1 cell
+</span><span class="n">N_d</span> <span class="o">=</span> <span class="p">[</span><span class="n">number_of_cells</span><span class="p">]</span>
+
+<span class="c1"># Loop through each division event
+</span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">number_of_divisions</span><span class="p">):</span>
+    <span class="c1"># Make the cells duplicate
+</span>    <span class="n">number_of_cells</span> <span class="o">=</span> <span class="n">number_of_cells</span> <span class="o">*</span> <span class="mi">2</span> 
+   
+    <span class="c1"># Add the new number of cells to our storage list.
+</span>    <span class="n">N_d</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">number_of_cells</span><span class="p">)</span>
+
+</code></pre></div></div>
+
+<p>We covered a lot of syntax in that cell, so let’s take a look at it piece by piece.</p>
+
+<ul>
+  <li><code class="highlighter-rouge">number_of_cells = 1</code>: We assigned our starting number of cells to a variable.</li>
+  <li><code class="highlighter-rouge">number_of_divisions = 10</code>: We assigned a value for the total number of divisions to a variable.</li>
+  <li><code class="highlighter-rouge">N_d = [number_of_cells]</code> We made a list where the first entry (our starting point) only has one cell.</li>
+</ul>
+
+<p>Now we enter the for loop, which exectues our simulation.</p>
+
+<ul>
+  <li><code class="highlighter-rouge">for i in range(number_of_divisions):</code> This starts the for loop. We are using the variable <code class="highlighter-rouge">i</code> as an iterator (basically a counter). Each time we go through the loop, <code class="highlighter-rouge">i</code> will take on the next value of the <code class="highlighter-rouge">range</code> function. The <code class="highlighter-rouge">range</code> function generates a list of integers starting from <code class="highlighter-rouge">0</code> to <code class="highlighter-rouge">number_of_divisions</code> which we set as 10.</li>
+  <li><code class="highlighter-rouge">number_of_cells = number_of_cells * 2</code>: This performed the cell division, doubling the number of cells. We also reassigned the value of this variable. Through the next iteration of the loop, the number will double again.</li>
+  <li><code class="highlighter-rouge">N_d.append(number_of_cells)</code>: This is using the <code class="highlighter-rouge">append</code> method of the <code class="highlighter-rouge">N_d</code> list to <strong>add</strong> the number of cells at each division to our list before we go on to the next round of the loop.</li>
+</ul>
+
+<p>Also notice that, just like in functions, the code is indented. Everything that is indented to the same level will execute within the loop.</p>
+
+<p>Let’s take a look at our <code class="highlighter-rouge">N_d</code> list and see how the number of cells changed over time.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Print the result of our simulation.
+</span><span class="k">print</span><span class="p">(</span><span class="n">N_d</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024]
+</code></pre></div></div>
+
+<p>It looks like our function worked! But can we tell this is exponential growth? Because this is a simple case, we can see that the number of cells are doubling at each division. However, It would be very useful to plot these results.</p>
+
+<h2 id="plotting-using-matplotlib">Plotting using <code class="highlighter-rouge">matplotlib</code></h2>
+
+<p>There are many plotting utilities available for Python. Some notable examples include <a href="http://bokeh.pydata.org/en/latest">Bokeh</a> for interactive plotting, <a href="http://seaborn.pydata.org">Seaborn</a> and <a href="https://altair-viz.github.io">Altair</a> for statistical visualization, and a Python port of the popular R programming language plotting utility <a href="https://github.com/yhat/ggplot">ggplot</a>. While interactive plotting is likely the visualization tool of the future, the most common (and full featured) plotting utility for Python as of this writing is <a href="http://matplotlib.org">matplotlib</a>. It was designed with the plotting syntax and style of MATLAB in mind and many of the commands are similiar. As is the case with numpy, matplotlib is not within the standard libray of Python and must be imported.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Load the plotting utility matplotlib with an alias plt.
+</span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+
+<span class="c1"># The following line allows for plots to be rendered in this notebook. 
+</span><span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>
+</code></pre></div></div>
+
+<p>We would like to see if our simulated cells appear to grow exponentially with time. To do so, we would like to plot the number of cells we have at division number $d$ as a function of $d$. Before we do any plotting, let’s generate a vector of division times that matches the size of our <code class="highlighter-rouge">N_d</code> vector. We can do this using some of the arrangement methods that we used earlier with numpy. Since we had measure at $d=0$, our new division vector must have a length of <code class="highlighter-rouge">number_of_divisions</code> + 1.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Establish a vector of the division cycles
+</span><span class="n">division_vector</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">number_of_divisions</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Now all that is left is to plot it! We can use the <code class="highlighter-rouge">plot</code> function of matplotlib to generate our scatterplot. We’ll choose small circles as our markers and provide the approriate $x$ and $y$ labels as we always should. We’ll also add a legend to our plot to show that these data poitns are from a simulation.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Generate the plot.
+</span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">division_vector</span><span class="p">,</span> <span class="n">N_d</span><span class="p">,</span> <span class="s">'o'</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s">'simulation'</span><span class="p">)</span>
+
+<span class="c1"># Set the axis labels.
+</span><span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s">'number of divisions'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s">'number of cells'</span><span class="p">)</span>
+
+<span class="c1"># Add a legend
+</span><span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;matplotlib.legend.Legend at 0x1174df610&gt;
+</code></pre></div></div>
+
+<p><img src="t0c_python_syntax_and_plotting_files/t0c_python_syntax_and_plotting_80_1.png" alt="png" /></p>
+
+<p>In calling the <code class="highlighter-rouge">plt.plot()</code> function, we first passed it the $x$ and $y$ data, told it to plot the points as circles (through the <code class="highlighter-rouge">'o'</code> argument), and finally gave it a label.</p>
+
+<p>To me, this plot is pretty ugly. Every aspect of this plot can be stylized to your liking, althought it will take a little bit of work. However, we can import the <code class="highlighter-rouge">seaborn</code> plotting utility which will stylize all of our plots and make them much clearer to interpret.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="n">sns</span>
+<span class="n">sns</span><span class="o">.</span><span class="nb">set</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p>With this imported, let’s go ahead and remake the plot from above. We’ll also save it using the <code class="highlighter-rouge">plt.savefig</code> function. With this, you’ll be able to insert your plots into the PDF assignments you will turn in.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Generate the plot.
+</span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">division_vector</span><span class="p">,</span> <span class="n">N_d</span><span class="p">,</span> <span class="s">'o'</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s">'simulation'</span><span class="p">)</span>
+
+<span class="c1"># Set the axis labels.
+</span><span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s">'number of divisions'</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s">'number of cells'</span><span class="p">)</span>
+
+<span class="c1"># Add a legend
+</span><span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s">'growth_simulation.pdf'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p><img src="t0c_python_syntax_and_plotting_files/t0c_python_syntax_and_plotting_84_0.png" alt="png" /></p>
+
+<p>That’s much better!</p>
+
+<h2 id="asking-for-help">Asking for help</h2>
+
+<p>While we have covered a lot of Python syntax, I don’t expect you will have all of it memorized! Every module (nearly) that you will use has a well constructed <strong>documentation</strong> that explains how functions should be used. Some great examples of this are the documentation pages for <a href="https://docs.scipy.org/doc/numpy/">NumPy and SciPy</a>, <a href="">seaborn</a>, and <a href="">scikit-image</a>.</p>
+
+<p>When you are typing away in the notebook or in an iPython terminal, you can pull up the documentation information for any function or attribute by typing the name followed by a question mark (<code class="highlighter-rouge">?</code>). For example (assuming you have <code class="highlighter-rouge">numpy</code> imported as <code class="highlighter-rouge">np</code>, you can get the documentation for the <code class="highlighter-rouge">np.random</code> module by typing the following.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="err">?</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[0;31mType:[0m        module
+[0;31mString form:[0m &lt;module 'numpy.random' from '/Users/gchure/anaconda3/lib/python3.7/site-packages/numpy/random/__init__.py'&gt;
+[0;31mFile:[0m        ~/anaconda3/lib/python3.7/site-packages/numpy/random/__init__.py
+[0;31mDocstring:[0m  
+========================
+Random Number Generation
+========================
+
+Use ``default_rng()`` to create a `Generator` and call its methods.
+
+=============== =========================================================
+Generator
+--------------- ---------------------------------------------------------
+Generator       Class implementing all of the random number distributions
+default_rng     Default constructor for ``Generator``
+=============== =========================================================
+
+============================================= ===
+BitGenerator Streams that work with Generator
+--------------------------------------------- ---
+MT19937
+PCG64
+Philox
+SFC64
+============================================= ===
+
+============================================= ===
+Getting entropy to initialize a BitGenerator
+--------------------------------------------- ---
+SeedSequence
+============================================= ===
+
+
+Legacy
+------
+
+For backwards compatibility with previous versions of numpy before 1.17, the
+various aliases to the global `RandomState` methods are left alone and do not
+use the new `Generator` API.
+
+==================== =========================================================
+Utility functions
+-------------------- ---------------------------------------------------------
+random               Uniformly distributed floats over ``[0, 1)``
+bytes                Uniformly distributed random bytes.
+permutation          Randomly permute a sequence / generate a random sequence.
+shuffle              Randomly permute a sequence in place.
+choice               Random sample from 1-D array.
+==================== =========================================================
+
+==================== =========================================================
+Compatibility
+functions - removed
+in the new API
+-------------------- ---------------------------------------------------------
+rand                 Uniformly distributed values.
+randn                Normally distributed values.
+ranf                 Uniformly distributed floating point numbers.
+random_integers      Uniformly distributed integers in a given range.
+                     (deprecated, use ``integers(..., closed=True)`` instead)
+random_sample        Alias for `random_sample`
+randint              Uniformly distributed integers in a given range
+seed                 Seed the legacy random number generator.
+==================== =========================================================
+
+==================== =========================================================
+Univariate
+distributions
+-------------------- ---------------------------------------------------------
+beta                 Beta distribution over ``[0, 1]``.
+binomial             Binomial distribution.
+chisquare            :math:`\chi^2` distribution.
+exponential          Exponential distribution.
+f                    F (Fisher-Snedecor) distribution.
+gamma                Gamma distribution.
+geometric            Geometric distribution.
+gumbel               Gumbel distribution.
+hypergeometric       Hypergeometric distribution.
+laplace              Laplace distribution.
+logistic             Logistic distribution.
+lognormal            Log-normal distribution.
+logseries            Logarithmic series distribution.
+negative_binomial    Negative binomial distribution.
+noncentral_chisquare Non-central chi-square distribution.
+noncentral_f         Non-central F distribution.
+normal               Normal / Gaussian distribution.
+pareto               Pareto distribution.
+poisson              Poisson distribution.
+power                Power distribution.
+rayleigh             Rayleigh distribution.
+triangular           Triangular distribution.
+uniform              Uniform distribution.
+vonmises             Von Mises circular distribution.
+wald                 Wald (inverse Gaussian) distribution.
+weibull              Weibull distribution.
+zipf                 Zipf's distribution over ranked data.
+==================== =========================================================
+
+==================== ==========================================================
+Multivariate
+distributions
+-------------------- ----------------------------------------------------------
+dirichlet            Multivariate generalization of Beta distribution.
+multinomial          Multivariate generalization of the binomial distribution.
+multivariate_normal  Multivariate generalization of the normal distribution.
+==================== ==========================================================
+
+==================== =========================================================
+Standard
+distributions
+-------------------- ---------------------------------------------------------
+standard_cauchy      Standard Cauchy-Lorentz distribution.
+standard_exponential Standard exponential distribution.
+standard_gamma       Standard Gamma distribution.
+standard_normal      Standard normal distribution.
+standard_t           Standard Student's t-distribution.
+==================== =========================================================
+
+==================== =========================================================
+Internal functions
+-------------------- ---------------------------------------------------------
+get_state            Get tuple representing internal state of generator.
+set_state            Set state of generator.
+==================== =========================================================
+</code></pre></div></div>
+
+<h2 id="in-conclusion">In conclusion…</h2>
+
+<p>In this tutorial, we worked through some of the basic syntax of the Python language, learned some crucial programming skills, and even generated a plot of cell growth over time. Through the rest of this course, you will build upon these skills and learn even more interesting and useful tidbits of programming.</p>
+
+      <div class="page-footer">
+      </div>
+    </div> <!-- End Wrap Content -->
+  </div> <!-- End Page Content -->
+</article> <!-- End Article Page -->
+
+</div>
+
+  </div>
+  
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
+</script> <!-- End Analytics -->
+
+</body>
+</html>

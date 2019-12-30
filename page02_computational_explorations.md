@@ -16,13 +16,13 @@ sessions here.
 {% if site.data.tutorials %}
 {% for tut in site.data.tutorials %}
 <article class="post">
-<a class="post-thumbnail" style="background-image: url({{site.url}}/{{site.baseurl}}/assets/img/{{tut.pic}})" href="{{site.baseurl}}/tutorials/{{tut.link}}.html"> </a>
+<a class="post-thumbnail" style="background-image: url({{site.url}}/{{site.baseurl}}/assets/img/{{tut.pic}})" href="{{site.url}}/{{site.baseurl}}/tutorials/{{tut.link}}.html"> </a>
 
 <div class="post-content">
 <b class="post-title"><a href="{{site.url}}/{{site.baseurl}}/tutorials/{{tut.link}}.html">{{tut.title}}</a></b>
 <p> {{tut.desc}}</p>
 <p>• <a href="{{site.url}}/{{site.baseurl}}/tutorials/{{tut.link}}.ipynb"> Jupyter Notebook (.ipynb)</a><br/></p>
-<i>Necessary Data Sets </i><br/>
+{% if fig.req %}<i>Necessary Data Sets </i><br/>
 {% for ds in fig.req %}
 {% if ds.storage == 'local' %}
 {% assign link = "{{site.url}}/{{site.baseurl}}/datasets/{{ds.link}}" %}
@@ -31,6 +31,7 @@ sessions here.
 {% endif %}
 <a style="font-size: 0.9em;" href="{{link}}"> - {{ds.title}} </a><br/>
 {% endfor %}
+{% endif %}
 </div>
 </article>
 {%endfor%}
