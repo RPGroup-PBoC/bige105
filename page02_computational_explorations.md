@@ -16,12 +16,12 @@ sessions here.
 {% if site.data.tutorials %}
 {% for tut in site.data.tutorials %}
 <article class="post">
-<a class="post-thumbnail" style="background-image: url({{site.url}}/{{site.baseurl}}/assets/img/{{tut.pic}})" href="{{site.url}}/{{site.baseurl}}/tutorials/{{tut.link}}.html"> </a>
+<a class="post-thumbnail" style="background-image: url(http://rpgroup.caltech.edu/bige105/assets/img/{{tut.pic}})" href="{{site.url}}/{{site.baseurl}}/tutorials/{{tut.link}}.html"> </a>
 
 <div class="post-content">
-<b class="post-title"><a href="{{site.url}}/{{site.baseurl}}/tutorials/{{tut.link}}.html">{{tut.title}}</a></b>
+<b class="post-title"><a href="http://rpgroup.caltech.edu/bige105/tutorials/{{tut.link}}.html">{{tut.title}}</a></b>
 <p> {{tut.desc}}</p>
-<p>• <a href="{{site.url}}/{{site.baseurl}}/tutorials/{{tut.link}}.ipynb"> Jupyter Notebook (.ipynb)</a><br/></p>
+<p>• <a href="http://rpgroup.caltech.edu/bige105/tutorials/{{tut.link}}.ipynb"> Jupyter Notebook (.ipynb)</a><br/></p>
 {% if fig.req %}<i>Necessary Data Sets </i><br/>
 {% for ds in fig.req %}
 {% if ds.storage == 'local' %}
