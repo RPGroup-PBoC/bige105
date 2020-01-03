@@ -2,10 +2,10 @@
 # Authors List
 # ------------------------------------------------------------------------------
 # This YAML data file contains entry for each author involved in the work
-# This YAML data file contains information for each author of the work. The 
-# author list will be generated in the order in which they are listed below. 
+# This YAML data file contains information for each author of the work. The
+# author list will be generated in the order in which they are listed below.
 # You can  add additional fields to each person, but these will not show up
-# automatically and must then be included manually in the Liquid template code 
+# automatically and must then be included manually in the Liquid template code
 # of the `page01_people.md` file.
 # ##############################################################################
 - author:
@@ -32,22 +32,30 @@
   img: suzy.jpg
   link: "https://sbeeler.github.io"
   institute: Division of Biology and Biological Engineering
-  other_info: 
+  other_info:
       Email Address: beeler [at] caltech [dot] edu
 
 - author:
-  name: Griffin Chure
+  name: Philip Woods
   title: Graduate TA
+  img: philip.jpg
+  institute: Division of Biology and Biological Engineering
+  other_info:
+      Email Address: pwoods [at] caltech [dot] edu
+
+- author:
+  name: Griffin Chure
+  title: Graduate Course Developer
   img: griffin.jpg
   link: "https://gchure.github.io"
   institute: Division of Biology and Biological Engineering
-  other_info: 
+  other_info:
       Email Address: gchure [at] caltech [dot] edu
 
 - author:
   name: Manuel Razo-Mejia
-  title: Graduate TA
+  title: Graduate Course Developer
   img: manuel.jpg
   institute: Division of Biology and Biological Engineering
-  other_info: 
+  other_info:
       Email Address: mrazomej [at] caltech [dot] edu
