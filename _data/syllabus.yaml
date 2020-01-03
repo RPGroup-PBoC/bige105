@@ -1,6 +1,13 @@
 - day:
   date: 1/6/2020
+  week: 1
   topic: >
    Student lightning talks, RP & VO vision of course.
   reading:  >
    "Beak of the Finch", Dobzhansky 1976
+
+- day:
+  date: 1/7/2020
+  week: Lab
+  topic: >
+   History of life on a Ribbon.
