@@ -453,7 +453,7 @@ Of course, stochastic simulations are useful for far more than just playing arou
 It is estimated that prior to 1870, the native population of the [American bison (*Bison bison bison*)](https://en.wikipedia.org/wiki/American_bison) numbered in the tens of millions. Less than twenty years later, there were only around 100 individuals left on the continent. It wasn't disease, starvation, or some natural disaster that pushed them to the brink of nonexistence. Rather, this remarkable extermination was due to unregulated (an often encouraged) hunting of bison by the westward settlers for food, skins and sport. Individual hunting expeditions could result in several thousands being killed in just a few days. The photo below shows a pile of *B. b. bison* skulls prior to being ground for fertilizer in the mid 1870s.
 
 <center>
-<img src="american_bison_pile.jpg" width=60%>
+<img src="american_bison_pile.jpg" width="50%">
 </center>
 
 Today, the population has bounced back to approximately 500,000 individuals. This is due in part to a conservation effort by a handful of ranchers in what is now Yellowstone National Park. The road to recovery was not smooth - this population further dwindled to only 25 individuals in 1902. With such a small population size, allele frequencies felt the impressive power of genetic drift. See [this review by Philip W. Hedrick](https://academic.oup.com/jhered/article/100/4/411/858147/Conservation-Genetics-and-North-American-Bison) for a more detailed study of the conservation effort of the American bison and the unexpected intrusion of cattle ancenstry into the current bison population.
