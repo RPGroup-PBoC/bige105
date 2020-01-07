@@ -16,10 +16,9 @@ specifically mention in class.
 <a class="post-thumbnail" style="background-image: url(http://rpgroup.caltech.edu/bige105/assets/img/{{pub.pic}})" href="{{site.url}}/{{site.baseurl}}/assets/papers/{{pub.file}}"> </a>
 <div class="post-content">
 <b class="post-title"><a href="{{site.url}}/{{site.baseurl}}/assets/papers/{{pub.file}}">{{pub.title}}</a></b>
-<p>by {{pub.authors}} in <i>{{pub.journal}}</i>, {{pub.year}} {{pub.vol_iss}}.</p>
-<p>•<a href="{{pub.publisher_link}}">Publisher</a><br/>
-<p>•<a href="{{site.url}}/{{site.baseurl}}/assets/papers/{{pub.file}}">PDF</a><br/>
-</p>
+<p>by {{pub.authors}} in <i>{{pub.journal}}</i>, {{pub.vol_iss}} {{pub.year}}.</p>
+<p>•<a href="{{pub.publisher_link}}">Publisher</a><br/></p>
+<p>•<a href="{{site.url}}/{{site.baseurl}}/assets/papers/{{pub.file}}">PDF</a><br/></p>
 </div>
 </article>
 {%endfor%}
