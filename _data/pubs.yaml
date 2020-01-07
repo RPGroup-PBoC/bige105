@@ -1,0 +1,35 @@
+- pub:
+  title: "Nothing in Biology Makes Sense Except in the Light of Evolution"
+  authors: Theodosius Dobzhansky.
+  journal: The American Biology Teacher
+  year: 1973
+  vol_iss: 35(3)
+  file: Dobzhansky1973.pdf
+  publisher_link: "https://abt.ucpress.edu/content/35/3/125.full.pdf+html"
+  pic: Dobzhansky.png
+
+- pub:
+  title: "Humans as the World's Greatest Evolutionary Force"
+  authors: Stephen R. Palumbi.
+  journal: Science 
+  year: 2001 
+  vol_iss: 293(5536) 
+  file: Palumbi2001.pdf
+  publisher_link: "https://science.sciencemag.org/content/293/5536/1786"
+  pic: Palumbi2001.png
+
+- pub:
+  title: "Trophic Downgrading of Planet Earth"
+  authors: >
+    James A. Estes, John Terbough, Justin S. Brashares, Mary E. Power, Joel Berger,
+    William J. Bond, Stephen R. Carpenter, Timothy E. Essington, Robert D. Holt,
+    Jeremy B.C. Jackson, Robert J. Marquis, Lauri Oksanen, Tarja Oksanen, Robert T. Paine, 
+    Ellen K. Pikitch, Williiam J. Ripple, Stuart A. Sandin, Martin Scheffer, 
+    Thomas W. Schoener, Jonathan B. Shurin, Anthony E. Sinclair, Michael E. Soulé,
+    Risto Virtanen, and David A. Wardle
+  journal: Science
+  year: 2011 
+  vol_iss: 333(6040)
+  file: Estes2011.pdf
+  publisher_link: "https://science.sciencemag.org/content/333/6040/301"
+  pic: Estes2011.png 

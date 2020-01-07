@@ -12,5 +12,14 @@ As the course progresses, we will post papers we find interesting or that we
 specifically mention in class. 
 
 {% for pub in site.data.pubs %}
-<li> <a style="text-decoration: none;" href="https://rpdata.caltech.edu/2020/protected/papers/{{pub.fname}}"> <b><i>{{pub.title}}</i> by {{pub.authors}} in {{pub.journal}}, {{pub.year}}, {{pub.vol_iss}}.</b></a> {{pub.desc}}</li>
-{% endfor %}
+<article class="post">
+<a class="post-thumbnail" style="background-image: url(http://rpgroup.caltech.edu/bige105/assets/img/{{pub.pic}})" href="{{site.url}}/{{site.baseurl}}/assets/papers/{{pub.file}}"> </a>
+<div class="post-content">
+<b class="post-title"><a href="{{site.url}}/{{site.baseurl}}/assets/papers/{{pub.file}}">{{pub.title}}</a></b>
+<p>by {{pub.authors}} in <i>{{pub.journal}}</i>, {{pub.year}} {{pub.vol_iss}}.</p>
+<p>•<a href="{{pub.publisher_link}}">Publisher</a><br/>
+<p>•<a href="{{site.url}}/{{site.baseurl}}/assets/papers/{{pub.file}}">PDF</a><br/>
+</p>
+</div>
+</article>
+{%endfor%}
