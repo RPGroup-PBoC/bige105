@@ -18,8 +18,8 @@ sidebar: true
 </tr>
 {% for hwk in site.data.homework %}
 <tr>
-<td> <a href="{site.baseurl}}/hwk/{{hwk.pset}}"> Problem Set </a></td>
-<td> <a href="{site.baseurl}}/hwk/{{hwk.reading}}"> Paper </a></td>
+<td> <a href="/hwk/{{hwk.pset}}"> Problem Set </a></td>
+<td> <a href="/hwk/{{hwk.reading}}"> Paper </a></td>
 <td> {{hwk.due_date}} </td>
 <td> <a href="https://rpdata.caltech.edu/courses/bige105/2020/{{hwk.solns}}">Solutions</a></td>
 </tr>
