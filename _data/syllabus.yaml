@@ -11,3 +11,59 @@
   week: Lab
   topic: >
    History of life on a Ribbon.
+
+- day:
+  date: 1/8/2020
+  week: 1
+  topic: >
+   Introduction to the forces of evolution: drift, mutation, inheritance, selection.
+
+- day:
+  date: 1/13/2020
+  week: 2
+  topic: >
+   Reading the rock record. Microbes and evolution.
+
+- day:
+  date: 1/14/2020
+  week: Lab
+  topic: >
+   Which came first, the chicken or the finch? Part I
+
+- day:
+  date: 1/15/2020
+  week: 2
+  topic: >
+   Molecular clock. Compare and contrast prokaryotes and eukaryotes.
+  due: HW 1
+
+- day:
+  date: 1/22/2020
+  week: 3
+  topic: >
+   Holiday - no class
+
+- day:
+  date: 1/21/2020
+  week: Lab
+  topic: >
+   Which came first, the chicken or the finch? Part II
+
+- day:
+  date: 1/22/2020
+  week: 3
+  topic: >
+   TBD
+  due: HW 2
+
+- day:
+  date: 1/27/2020
+  week: 4
+  topic: >
+   Mechanisms of speciation.
+
+- day:
+  date: 1/28/2020
+  week: Lab
+  topic: >
+   Luria-Delbruck part I
