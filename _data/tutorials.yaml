@@ -22,8 +22,7 @@
   desc: How did the skinks get to Fernando de Noronha? 
   pic: skink.png
   req:
-    - ds:
+    - title: Sequences of <i>Mabuya</i> from Fernando de Noronha and around the world
       storage: local
       link: "http://rpgroup.caltech.edu/bige105/data/mabuya_atlantica.zip"
-      title: Sequences of <i>Mabuya</i> from Fernando de Noronha and around the world
-
+      
