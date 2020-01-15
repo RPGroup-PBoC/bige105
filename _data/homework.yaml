@@ -1,5 +1,12 @@
 - hwk:
+  number: 1
   pset: hw_01.pdf
   reading: bailey2010.pdf
   desc: A feeling for the numbers in evolution
   due_date: 1/15/2020
+
+- hwk:
+  number: 2
+  pset: hw_02.pdf
+  desc: How did frogs get to São Tomé?
+  due_date: 1/22/2020
