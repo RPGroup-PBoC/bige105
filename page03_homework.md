@@ -16,7 +16,6 @@ sidebar: true
 <th> <b>Associated Reading</b></th>
 <th> <b> Due Date</b> </th>
 </tr>
-
 {% for hwk in site.data.homework %}
 <tr>
     <td>{{hwk.number}}</td>
@@ -27,6 +26,6 @@ sidebar: true
     <td> -- </td>
     {% endif %}
     <td> {{hwk.due_date}} </td>
-<tr>
+</tr>
 {%endfor%}
 </table>
