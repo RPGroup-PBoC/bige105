@@ -15,3 +15,15 @@
   link: t0c/t0c_python_syntax_and_plotting
   desc:  This tutorial will walk you thorugh how to use the Jupyter Notebook
   pic: tut0c.png
+
+- tut:
+  title: "Tutorial 1: An Introduction To DNA Sequence Analysis"
+  link: t01/t01_python_syntax_and_plotting
+  desc: How did the skinks get to Fernando de Noronha? 
+  pic: skink.png
+  req:
+    - ds:
+      storage: local
+      link: "http://rpgroup.caltech.edu/bige105/data/mabuya_atlantica.zip"
+      title: Sequences of <i>Mabuya</i> from Fernando de Noronha and around the world
+

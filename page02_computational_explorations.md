@@ -22,8 +22,8 @@ sessions here.
 <b class="post-title"><a href="http://rpgroup.caltech.edu/bige105/tutorials/{{tut.link}}.html">{{tut.title}}</a></b>
 <p> {{tut.desc}}</p>
 <p>• <a href="http://rpgroup.caltech.edu/bige105/tutorials/{{tut.link}}.ipynb"> Jupyter Notebook (.ipynb)</a><br/></p>
-{% if fig.req %}<i>Necessary Data Sets </i><br/>
-{% for ds in fig.req %}
+{% if tut.req %}<i>Necessary Data Sets </i><br/>
+{% for ds in tut.req %}
 {% if ds.storage == 'local' %}
 {% assign link = "{{site.url}}/{{site.baseurl}}/datasets/{{ds.link}}" %}
 {% else %}
