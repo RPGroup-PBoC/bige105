@@ -18,7 +18,7 @@
 
 - tut:
   title: "Tutorial 1: An Introduction To DNA Sequence Analysis"
-  link: t01/t01_python_syntax_and_plotting
+  link: t01/t01_sequence_analysis
   desc: How did the skinks get to Fernando de Noronha? 
   pic: skink.png
   req:
