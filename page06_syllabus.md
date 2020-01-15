@@ -13,7 +13,6 @@ sidebar: true
     <th><b>Topic</b></th>
     <th><b>Reading</b></th>
     <th><b>Tasks Due</b></th>
-    <th><b>Lecture Notes</b></th>
 </tr>
 {% for day in site.data.syllabus %}
 <tr>
