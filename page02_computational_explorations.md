@@ -25,9 +25,9 @@ sessions here.
 {% if tut.req %}<i>Necessary Data Sets </i><br/>
 {% for ds in tut.req %}
 {% if ds.storage == 'local' %}
-{% assign link = "{{ds.link}}" %}
+{% assign link = {{ds.link}} %}
 {% else %}
-{% assign link = "{{ds.link}}" %}
+{% assign link = {{ds.link}} %}
 {% endif %}
 <a style="font-size: 0.9em;" href="{{link}}"> - {{ds.title}} </a><br/>
 {% endfor %}
