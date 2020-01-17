@@ -26,7 +26,9 @@ sidebar: true
 {% endfor %}
 {% endif %}
 <td> {{hwk.due_date}} </td>
+{% if hwk.solutions %}
 <td> <a href="https://rpdata.caltech.edu/courses/bige105/2020/{{hwk.solns}}">Solutions</a></td>
+{% endif %}
 </tr>
 {%endfor%}
 </table>
