@@ -2,7 +2,7 @@
 layout: page
 title: Laboratory Experiments
 img: lab.png # Add image post (optional)
-permalink: lab
+permalink: experiments
 sidebar: true
 ---
 
