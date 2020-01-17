@@ -12,11 +12,13 @@ sidebar: true
 <table>
 <tr>
 <th> <b>Homework</b></th>
+<th> <b> Problem Set </b></th>
 <th> <b>Associated Files</b></th>
 <th> <b> Due Date</b> </th>
 </tr>
 {% for hwk in site.data.homework %}
 <tr>
+<td> {{hwk.number}} </td>
 <td> <a href="http://www.rpgroup.caltech.edu/bige105/hwk/{{hwk.pset}}"> Problem Set </a></td>
 {% if hwk.data %}
 {% for dataset in hwk.data %}

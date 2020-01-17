@@ -4,6 +4,9 @@
   reading: bailey2010.pdf
   desc: A feeling for the numbers in evolution
   due_date: 1/15/2020
+  data:
+    - name: Paper
+      link: bailey2010.pdf
 
 - hwk:
   number: 2
