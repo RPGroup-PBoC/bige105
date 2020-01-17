@@ -10,3 +10,6 @@
   pset: hw_02.pdf
   desc: How did frogs get to São Tomé?
   due_date: 1/22/2020
+  data:
+    - name: Frog DNA sequences
+      link: hw2_dataset.zip

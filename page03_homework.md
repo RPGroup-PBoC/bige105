@@ -12,20 +12,19 @@ sidebar: true
 <table>
 <tr>
 <th> <b>Homework</b></th>
-<th> <b>File</b></th>
-<th> <b>Associated Reading</b></th>
+<th> <b>Associated Files</b></th>
 <th> <b> Due Date</b> </th>
 </tr>
 {% for hwk in site.data.homework %}
 <tr>
-    <td>{{hwk.number}}</td>
-    <td> <a href="http://www.rpgroup.caltech.edu/bige105/hwk/{{hwk.pset}}"> Problem Set </a></td>
-    {% if hwk.reading %}
-    <td> <a href="http://www.rpgroup.caltech.edu/bige105/hwk/{{hwk.reading}}"> Paper </a></td>
-    {% else %}
-    <td> -- </td>
-    {% endif %}
-    <td> {{hwk.due_date}} </td>
+<td> <a href="http://www.rpgroup.caltech.edu/bige105/hwk/{{hwk.pset}}"> Problem Set </a></td>
+{% if hwk.data %}
+{% for dataset in hwk.data %}
+<td> <a href="http://www.rpgroup.caltech.edu/bige105/data/{{dataset.link}}">{{dataset.name}}</a></td>
+{% endfor %}
+{% endif %}
+<td> {{hwk.due_date}} </td>
+<td> <a href="https://rpdata.caltech.edu/courses/bige105/2020/{{hwk.solns}}">Solutions</a></td>
 </tr>
 {%endfor%}
 </table>
