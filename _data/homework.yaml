@@ -16,3 +16,9 @@
   data:
     - name: Frog DNA sequences
       link: hw2_dataset.zip
+
+- hwk:
+  number: 3
+  pset: hw_03.pdf
+  desc: Mutations by the numbers 
+  due_date: 1/27/2020
