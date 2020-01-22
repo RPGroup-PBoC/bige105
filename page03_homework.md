@@ -24,6 +24,8 @@ sidebar: true
 {% for dataset in hwk.data %}
 <td> <a href="http://www.rpgroup.caltech.edu/bige105/data/{{dataset.link}}">{{dataset.name}}</a></td>
 {% endfor %}
+{% else %}
+<td> -- </td>
 {% endif %}
 <td> {{hwk.due_date}} </td>
 {% if hwk.solutions %}
