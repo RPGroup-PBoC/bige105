@@ -2,7 +2,7 @@
   date: 1/6/2020
   week: 1
   topic: >
-   Student lightning talks, RP & VO vision of course.
+   Student lightning talks, RP & VO vision of course
   reading:  >
    "Beak of the Finch", Dobzhansky 1976
 
@@ -10,19 +10,19 @@
   date: 1/7/2020
   week: Lab
   topic: >
-   History of life on a Ribbon.
+   Crafting the history of life on Earth
 
 - day:
   date: 1/8/2020
   week: 1
   topic: >
-   Introduction to the forces of evolution: drift, mutation, inheritance, selection.
+   What is evolution? The facts. The theory (RP)
 
 - day:
   date: 1/13/2020
   week: 2
   topic: >
-   Reading the rock record. 
+   Darwin the geobiologist. Reading the rock record (VO)
 
 - day:
   date: 1/14/2020
@@ -34,7 +34,7 @@
   date: 1/15/2020
   week: 2
   topic: >
-   Species concept and phylogeny.
+   Species concept and phylogeny (VO)
   due: HW 1
 
 - day:
@@ -53,17 +53,132 @@
   date: 1/22/2020
   week: 3
   topic: >
-   TBD
+   Whales as a success story for illustrating evolution (RP)
   due: HW 2
 
 - day:
   date: 1/27/2020
   week: 4
   topic: >
-   Mechanisms of speciation.
+   Mechanisms of speciation (VO)
 
 - day:
   date: 1/28/2020
   week: Lab
   topic: >
    Luria-Delbruck part I
+
+- day:
+  date: 1/29/2020
+  week: 4
+  topic: >
+   Natural selection and speciation over time (VO)
+  due: HW 3
+
+- day:
+  date: 2/3/2020
+  week: 5
+  topic: >
+   TBD
+
+- day:
+  date: 2/4/2020
+  week: Lab
+  topic: >
+   Luria-Delbruck part II
+
+- day:
+  date: 2/5/2020
+  week: 5
+  topic: >
+   TBD
+
+- day:
+  date: 2/10/2020
+  week: 6
+  topic: >
+   TBD
+
+- day:
+  date: 2/11/2020
+  week: Lab
+  topic: >
+   Population genetics computational exploration
+
+- day:
+  date: 2/12/2020
+  week: 6
+  topic: >
+   TBD
+
+- day:
+  date: 2/17/2020
+  week: 7
+  topic: >
+   Holiday - no class
+
+- day:
+  date: 2/18/2020
+  week: Lab
+  topic: >
+   Debate Prep
+
+- day:
+  date: 2/19/2020
+  week: 7
+  topic: >
+   In class debate on the origin of eukaryotes
+
+- day:
+  date: 2/24/2020
+  week: 8
+  topic: >
+   Human evolution (RP)
+
+- day:
+  date: 2/25/2020
+  week: Lab
+  topic: >
+    Evolving promoters part I
+
+- day:
+  date: 2/25/2020
+  week: 8
+  topic: >
+   Human evolution (RP)
+
+- day:
+  date: 3/2/2020
+  week: 9
+  topic: >
+   Co-evolution (VO)
+
+- day:
+  date: 3/3/2020
+  week: Lab
+  topic: >
+   Visit bird lab at Occidental College
+
+- day:
+  date: 3/4/2020
+  week: 9
+  topic: >
+   Mutualistic and antagonistic interactions (VO)
+
+- day:
+  date: 3/9/2020
+  week: 10
+  topic: >
+   Guest lecture
+
+- day:
+  date: 3/10/2020
+  week: Lab
+  topic: >
+   Evolving promoters part II
+
+- day:
+  date: 3/11/2020
+  week: 10
+  topic: >
+   Guest lecture
