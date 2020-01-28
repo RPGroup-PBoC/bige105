@@ -23,6 +23,7 @@
   week: 2
   topic: >
    Darwin the geobiologist. Reading the rock record (VO)
+  slides: Bi105_2020_Week2_Lecture3_slides.pdf
 
 - day:
   date: 1/14/2020
@@ -36,6 +37,7 @@
   topic: >
    Species concept and phylogeny (VO)
   due: HW 1
+  slides: Bi105_2020_Week2_Lecture4_slides.pdf
 
 - day:
   date: 1/22/2020
@@ -66,7 +68,7 @@
   date: 1/28/2020
   week: Lab
   topic: >
-   Luria-Delbruck part I
+   Population genetics computational exploration
 
 - day:
   date: 1/29/2020
@@ -85,7 +87,7 @@
   date: 2/4/2020
   week: Lab
   topic: >
-   Luria-Delbruck part II
+   Luria-Delbruck part I
 
 - day:
   date: 2/5/2020
@@ -103,7 +105,7 @@
   date: 2/11/2020
   week: Lab
   topic: >
-   TBD
+   Luria-Delbruck part II
 
 - day:
   date: 2/12/2020
@@ -139,7 +141,7 @@
   date: 2/25/2020
   week: Lab
   topic: >
-    Evolving promoters
+    Evolving promoters part I
 
 - day:
   date: 2/25/2020
@@ -175,7 +177,7 @@
   date: 3/10/2020
   week: Lab
   topic: >
-   TBD
+   Evolving promoters part II
 
 - day:
   date: 3/11/2020

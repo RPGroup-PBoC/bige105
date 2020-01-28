@@ -25,8 +25,8 @@ sidebar: true
     {% else %}
     <td> -- </td>
     {% endif %}
-    {% if day.notes %}
-    <td><a href="https://rpdata.caltech.edu/courses/bige105/protected/{{day.notes}}">
+    {% if day.slides %}
+    <td><a href="http://rpdata.caltech.edu/courses/bige105/{{day.slides}}">
     PDF </a></td>
     {% else %}
     <td> -- </td>
