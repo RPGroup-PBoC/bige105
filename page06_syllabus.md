@@ -6,6 +6,8 @@ permalink: syllabus
 sidebar: true
 ---
 
+Textbook readings from [Evolution by Bergstrom and Dugatkin](https://wwnorton.com/books/Evolution/).
+
 <table>
 <tr>
     <th><b>Date</b></th>
