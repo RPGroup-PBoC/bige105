@@ -43,3 +43,12 @@
   file: Mendel1865.pdf
   publisher_link: "https://www.biodiversitylibrary.org/item/124139#page/5/mode/1up"
   pic: Mendel1865.jpg
+
+- pub:
+  title: "The Orgin(s) of Whales"
+  authors: >
+    Mark D. Uhen
+  journal: Annual Review of Earth and Planetary Sciences
+  year: 2010
+  publisher_link: "https://www.annualreviews.org/doi/full/10.1146/annurev-earth-040809-152453"
+  pic: Uhen2010.jpg
