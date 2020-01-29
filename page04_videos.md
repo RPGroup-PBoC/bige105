@@ -2,7 +2,7 @@
 layout: page
 title: Videos
 img: readings.png # Add image post (optional)
-permalink: readings
+permalink: videos
 sidebar: true
 ---
 
