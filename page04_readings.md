@@ -18,9 +18,7 @@ specifically mention in class.
 <b class="post-title"><a href="{{site.url}}/{{site.baseurl}}/assets/papers/{{pub.file}}">{{pub.title}}</a></b>
 <p>by {{pub.authors}} in <i>{{pub.journal}}</i>, {{pub.vol_iss}} {{pub.year}}.</p>
 <p>•<a href="{{pub.publisher_link}}">Publisher</a><br/></p>
-{% if pub.file %}
 <p>•<a href="http://rpgroup.caltech.edu/bige105/assets/papers/{{pub.file}}">PDF</a><br/></p>
 </div>
-{% endif %}
 </article>
 {%endfor%}

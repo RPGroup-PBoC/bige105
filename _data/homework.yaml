@@ -22,3 +22,9 @@
   pset: hw_03.pdf
   desc: Mutations by the numbers
   due_date: 1/29/2020
+
+- hwk:
+  number: 4
+  pset: hw_04.pdf
+  desc: Modeling drift and selection
+  due_date: 2/12/2020
