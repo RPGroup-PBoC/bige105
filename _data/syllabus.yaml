@@ -83,7 +83,7 @@
   date: 2/3/2020
   week: 5
   topic: >
-   TBD
+   Population genetics: Introduction (RP)
 
 - day:
   date: 2/4/2020
@@ -96,13 +96,13 @@
   date: 2/5/2020
   week: 5
   topic: >
-   TBD
+   Population genetics: Drift and the Wright-Fisher model (RP)
 
 - day:
   date: 2/10/2020
   week: 6
   topic: >
-   TBD
+   Population genetics: Analogies to Einstein’s diffusion equation (RP)
 
 - day:
   date: 2/11/2020
@@ -115,6 +115,7 @@
   week: 6
   topic: >
    TBD
+  due: HW 4
 
 - day:
   date: 2/17/2020
