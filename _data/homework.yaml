@@ -28,3 +28,9 @@
   pset: hw_04.pdf
   desc: Modeling drift and selection
   due_date: 2/12/2020
+
+- hwk:
+  number: 5
+  pset: hw_05.pdf
+  desc: Genetic drift and eocyte hypothesis
+  due_date: 2/12/2020
