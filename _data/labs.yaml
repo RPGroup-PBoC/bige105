@@ -6,6 +6,6 @@
 
 - lab:
   title: "Evolving promoters"
-  file: lab2/analyzing_competion_experiments_in_class.ipynb
+  file: lab6/analyzing_competion_experiments_in_class.html
   desc: Thinking about evolving sequences in the lab
   pic: lab6.png
