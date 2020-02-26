@@ -3,3 +3,9 @@
   file: lab2/bootcamp_comp.pdf
   desc: How we extract DNA and use sequences to determine relatedness of organisms
   pic: lab2.png
+
+- lab:
+  title: "Evolving promoters"
+  file: lab2/analyzing_competion_experiments_in_class.ipynb
+  desc: Thinking about evolving sequences in the lab
+  pic: lab6.png
