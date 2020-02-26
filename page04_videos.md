@@ -16,3 +16,5 @@ specifically mention in class.
 - Hopi Hoekstra's iBiology seminars on [her work on the evolution of mice](https://www.ibiology.org/ecology/phenotypic-adaptations/#part-1), and [the genetics of morphology](https://www.ibiology.org/ecology/phenotypic-adaptations/#part-2), and [the genetics of behavior](https://www.ibiology.org/ecology/phenotypic-adaptations/#part-3).  
 
 - [The Phylogenetic Tree of Anole Lizards](https://www.youtube.com/watch?v=rdZOwyDbyL0) - This video gives an outstanding view of the convergent evolution of anole lizards in the Caribbean.
+
+- [Allan Wilson: Evolutionary](https://www.nzonscreen.com/title/allan-wilson-evolutionary-2008) - Documentary illustrating the concept of a molecular clock with hemoglobin. 

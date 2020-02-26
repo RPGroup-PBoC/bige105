@@ -50,6 +50,30 @@
     Mark D. Uhen
   journal: Annual Review of Earth and Planetary Sciences
   year: 2010
-  file: 
+  file:
   publisher_link: "https://www.annualreviews.org/doi/full/10.1146/annurev-earth-040809-152453"
   pic: Uhen2010.jpg
+
+- pub:
+  title: "Divergence, Convergence, and the Ancestry of Feral Populations in the
+   Domestic Rock Pigeon"
+  authors: >
+    Sydney A. Stringham, Elisabeth E. Mulroy, Jinchuan Xing, David Record,
+    Michael W. Guernsey, Jaclyn T. Aldenhoven, Edward J. Osborne, and Michael
+    D. Shapiro
+  journal: Current Biology
+  year: 2012
+  file: Stringham2012.pdf
+  publisher_link: "https://www.sciencedirect.com/science/article/pii/S0960982211014588?via%3Dihub"
+  pic: Stringham2012.png
+
+- pub:
+  title: "Contingency, convergence and hyper-astronomical numbers in biological
+  evolution"
+  authors: >
+    Ard A. Louis
+  journal: Studies in History and Philosophy of Biological and Biomedical Sciences
+  year: 2016
+  file: Louis2016.pdf
+  publisher_link: "https://www.sciencedirect.com/science/article/abs/pii/S1369848615001879"
+  pic: Louis2016.png
